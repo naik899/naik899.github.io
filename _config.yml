@@ -1,0 +1,10 @@
+# GitHub Pages configuration
+
+# Set a simple theme
+remote_theme: pages-themes/minimal@v0.2.0
+
+# Site settings
+lang: en-US
+title: Ravindra Naik
+description: Portfolio site hosted on GitHub Pages
+
