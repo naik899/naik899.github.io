@@ -1,25 +1,47 @@
-# Ravindra Naik
+---
+layout: default
+---
 
-Welcome to my portfolio. This site is hosted on GitHub Pages.
+<header class="header">
+  <div class="container">
+    <h1 class="header-title">
+      <span class="up">Hello!</span>
+      <span class="down">I'm Ravindra Naik</span>
+    </h1>
+    <p class="header-subtitle">Developer & Enthusiast</p>
+    <a class="btn" href="#contact">Get in Touch</a>
+  </div>
+</header>
 
-<!-- TODO: Add your bio information from LinkedIn here -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>Add a short paragraph about yourself.</p>
+</section>
 
-## About
+<section id="experience">
+  <h2>Experience</h2>
+  <ul>
+    <li>List your professional experiences here.</li>
+  </ul>
+</section>
 
-Add a short paragraph about yourself.
+<section id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>Add bullet points of your skills.</li>
+  </ul>
+</section>
 
-## Experience
+<section id="education">
+  <h2>Education</h2>
+  <ul>
+    <li>Include your educational background.</li>
+  </ul>
+</section>
 
-- List your professional experiences here.
-
-## Skills
-
-- Add bullet points of your skills.
-
-## Education
-
-- Include your educational background.
-
-## Contact
-
-- [LinkedIn](https://www.linkedin.com/in/naik899/)
+<section id="contact">
+  <h2>Contact</h2>
+  <ul>
+    <li><a href="https://www.linkedin.com/in/naik899/">LinkedIn</a></li>
+  </ul>
+</section>

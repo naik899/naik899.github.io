@@ -1,6 +1,7 @@
 # ravindranaik.github.io
 
 This repository contains the source for my personal portfolio hosted using GitHub Pages.
+The site now uses the **DevPortfolio** theme by Ryan Fitzgerald.
 
 ## How to use
 

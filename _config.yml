@@ -1,7 +1,7 @@
 # GitHub Pages configuration
 
-# Set a simple theme
-remote_theme: pages-themes/minimal@v0.2.0
+# Use the DevPortfolio theme by Ryan Fitzgerald
+remote_theme: RyanFitzgerald/devportfolio
 
 # Site settings
 lang: en-US
