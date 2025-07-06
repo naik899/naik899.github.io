@@ -46,9 +46,37 @@
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hero-profile {
+  flex-shrink: 0;
+}
+
+.hero-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 1s ease-out 0.1s both;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-text {
+  flex: 1;
 }
 
 .hero-badge {
@@ -668,6 +696,17 @@
     min-height: auto;
   }
   
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .hero-image {
+    width: 150px;
+    height: 150px;
+  }
+  
   .hero-title {
     font-size: 3rem;
   }
@@ -745,6 +784,11 @@
 @media (max-width: 480px) {
   .hero-section {
     padding: 4rem 0;
+  }
+  
+  .hero-image {
+    width: 120px;
+    height: 120px;
   }
   
   .hero-title {

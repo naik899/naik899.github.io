@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Ravindra Naik - Senior Engineering Manager | Cloud Architecture & Gen AI
-description: Cloud-native and Full-stack Platform Engineer with 12+ years of expertise in scalable systems, API modernization, and AI automation
+title: Ravindra Naik - Cloud Architect & GenAI Evangelist
+description: Cloud Architect and GenAI Evangelist with 12+ years of expertise in scalable systems, AI automation, and energy intelligence platforms
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
@@ -9,12 +9,17 @@ description: Cloud-native and Full-stack Platform Engineer with 12+ years of exp
 <!-- Hero Section -->
 <section id="hero" class="hero-section">
   <div class="container">
-    <div class="hero-content">
+        <div class="hero-content">
+      <div class="hero-profile">
+        <div class="hero-image">
+          <img src="{{ '/assets/images/ravi.jpeg' | relative_url }}" alt="Ravindra Naik" />
+        </div>
+      </div>
       <div class="hero-text">
         <div class="hero-badge">👋 Welcome to my portfolio</div>
         <h1 class="hero-title">
           <span class="hero-name">Ravindra Naik</span>
-    </h1>
+        </h1>
         <p class="hero-subtitle">Cloud Architect & GenAI Evangelist</p>
         <p class="hero-role">Energy Intelligence Platform @ Energy Exemplar</p>
         <p class="hero-description">
