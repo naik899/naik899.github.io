@@ -6,5 +6,50 @@ remote_theme: RyanFitzgerald/devportfolio
 # Site settings
 lang: en-US
 title: Ravindra Naik
-description: Portfolio site hosted on GitHub Pages
+description: Cloud-native and Full-stack Platform Engineer with 12+ years of expertise in scalable systems
+url: "https://naik899.github.io"
+baseurl: ""
+
+# Author information
+author:
+  name: Ravindra Naik
+  email: ravi.naik@example.com
+  location: Bengaluru, Karnataka, India
+  bio: Senior Engineering Manager | Cloud Architecture & GenAI
+  avatar: assets/images/profile.jpg
+  social:
+    linkedin: naik899
+    github: naik899
+    twitter: naik899
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: About
+    url: /#about
+  - title: Experience
+    url: /#experience
+  - title: Projects
+    url: /#projects
+  - title: Blog
+    url: /blog/
+  - title: Contact
+    url: /#contact
+
+# Blog settings
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
 
