@@ -11,15 +11,30 @@ description: Cloud-native and Full-stack Platform Engineer with 12+ years of exp
   <div class="container">
     <div class="hero-content">
       <div class="hero-text">
+        <div class="hero-badge">👋 Welcome to my portfolio</div>
         <h1 class="hero-title">
-          <span class="hero-greeting">Hello, I'm</span>
           <span class="hero-name">Ravindra Naik</span>
         </h1>
-        <p class="hero-subtitle">Senior Engineering Manager | Cloud Architecture & GenAI</p>
+        <p class="hero-subtitle">Cloud Architect & GenAI Evangelist</p>
+        <p class="hero-role">Energy Intelligence Platform @ Energy Exemplar</p>
         <p class="hero-description">
-          12+ years of expertise in scalable systems, API modernization, and AI automation. 
-          Currently leading cloud architecture and GenAI initiatives at Energy Exemplar.
+          Architecting cloud-native solutions and pioneering GenAI innovations for the energy sector. 
+          Leading the transformation of PLEXOS® into an intelligent, AI-augmented energy simulation platform.
         </p>
+        <div class="hero-highlights">
+          <div class="highlight-item">
+            <span class="highlight-icon">☁️</span>
+            <span class="highlight-text">Cloud Architecture</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-icon">🤖</span>
+            <span class="highlight-text">GenAI Evangelist</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-icon">⚡</span>
+            <span class="highlight-text">Energy Intelligence</span>
+          </div>
+        </div>
         <div class="hero-stats">
           <div class="stat-item">
             <span class="stat-number">12+</span>
@@ -35,8 +50,9 @@ description: Cloud-native and Full-stack Platform Engineer with 12+ years of exp
           </div>
         </div>
         <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Get in Touch</a>
-          <a href="#projects" class="btn btn-secondary">View Projects</a>
+          <a href="#contact" class="btn btn-primary">Let's Connect</a>
+          <a href="#projects" class="btn btn-secondary">View My Work</a>
+          <a href="/blog/" class="btn btn-outline">Read My Blog</a>
         </div>
       </div>
     </div>
@@ -49,11 +65,11 @@ description: Cloud-native and Full-stack Platform Engineer with 12+ years of exp
     <h2 class="section-title">About Me</h2>
     <div class="about-content">
       <div class="about-text">
-        <p>I'm a passionate Senior Engineering Manager with over 12 years of experience in scalable systems, API modernization, and AI automation. Currently leading cloud architecture and GenAI initiatives at Energy Exemplar, I specialize in reducing simulation costs, boosting throughput, and delivering reliable microservices at scale.</p>
+        <p>I'm a passionate Cloud Architect and GenAI Evangelist with over 12 years of experience in scalable systems, API modernization, and AI automation. Currently leading the Energy Intelligence Platform at Energy Exemplar, I specialize in architecting cloud-native solutions and pioneering GenAI innovations for the energy sector.</p>
         
         <p>My expertise includes designing and implementing microservices and REST/OData APIs to modernize legacy platforms, improving platform stability and maintainability. I've built open-source compilers, developed patent-pending virtual agents, and created innovative mobile applications that drive product innovation.</p>
         
-        <p>I believe in using technology as a force for good and continuously learning to stay at the forefront of innovation.</p>
+        <p>As a GenAI practitioner, I'm focused on transforming the PLEXOS® energy simulation platform into an intelligent, AI-augmented solution that empowers energy professionals with cutting-edge analytics and insights.</p>
       </div>
     </div>
   </div>
@@ -68,11 +84,11 @@ description: Cloud-native and Full-stack Platform Engineer with 12+ years of exp
         <div class="timeline-marker"></div>
         <div class="timeline-content">
           <div class="timeline-header">
-            <h3>Senior Engineering Manager</h3>
+            <h3>Cloud Architect & GenAI Evangelist</h3>
             <span class="company">Energy Exemplar</span>
             <span class="duration">Jan 2024 - Present</span>
           </div>
-          <p>Lead Cloud-Architect & GenAI Team for PLEXOS® Cloud Platform. Manage a high-performing team of cloud architects and GenAI engineers to transform the PLEXOS energy simulation platform into a cloud-native, AI-augmented SaaS solution. Spearhead the design and deployment of the GenAI platform.</p>
+          <p>Lead the Energy Intelligence Platform initiative, architecting cloud-native solutions and pioneering GenAI innovations for the energy sector. Transform the PLEXOS® energy simulation platform into an intelligent, AI-augmented SaaS solution that empowers energy professionals with cutting-edge analytics and insights.</p>
         </div>
       </div>
       
@@ -169,20 +185,8 @@ description: Cloud-native and Full-stack Platform Engineer with 12+ years of exp
     <h2 class="section-title">Skills & Expertise</h2>
     <div class="skills-grid">
       <div class="skill-category">
-        <div class="skill-icon">👥</div>
-        <h3>Leadership & Management</h3>
-        <ul>
-          <li>Engineering Team Leadership</li>
-          <li>Technical Strategy & Planning</li>
-          <li>Project Management</li>
-          <li>Cross-functional Collaboration</li>
-          <li>Mentoring & Development</li>
-        </ul>
-      </div>
-      
-      <div class="skill-category">
         <div class="skill-icon">☁️</div>
-        <h3>Cloud & Platform</h3>
+        <h3>Cloud Architecture</h3>
         <ul>
           <li>Cloud-native Architecture</li>
           <li>Platform Engineering</li>
@@ -193,24 +197,36 @@ description: Cloud-native and Full-stack Platform Engineer with 12+ years of exp
       </div>
       
       <div class="skill-category">
-        <div class="skill-icon">🔧</div>
-        <h3>API & Platform Development</h3>
+        <div class="skill-icon">🤖</div>
+        <h3>GenAI & AI</h3>
         <ul>
-          <li>REST/OData API Design</li>
-          <li>Legacy Platform Modernization</li>
-          <li>Microservices Architecture</li>
-          <li>Open Source Development</li>
+          <li>Generative AI (GenAI)</li>
+          <li>AI/ML Architecture</li>
+          <li>Natural Language Processing</li>
+          <li>AI Automation</li>
+          <li>AI Strategy & Evangelism</li>
         </ul>
       </div>
       
       <div class="skill-category">
-        <div class="skill-icon">🤖</div>
-        <h3>AI & Automation</h3>
+        <div class="skill-icon">🔧</div>
+        <h3>Platform Development</h3>
         <ul>
-          <li>Generative AI (GenAI)</li>
-          <li>Virtual Agent Development</li>
-          <li>AI Automation</li>
-          <li>Natural Language Processing</li>
+          <li>REST/OData API Design</li>
+          <li>Legacy Platform Modernization</li>
+          <li>Microservices Architecture</li>
+          <li>Energy Intelligence Platforms</li>
+        </ul>
+      </div>
+      
+      <div class="skill-category">
+        <div class="skill-icon">⚡</div>
+        <h3>Energy & Innovation</h3>
+        <ul>
+          <li>Energy Simulation Platforms</li>
+          <li>PLEXOS® Platform Expertise</li>
+          <li>Energy Analytics</li>
+          <li>Innovation Strategy</li>
         </ul>
       </div>
       
@@ -314,9 +330,9 @@ description: Cloud-native and Full-stack Platform Engineer with 12+ years of exp
   <div class="container">
     <h2 class="section-title">Get In Touch</h2>
     <div class="contact-content">
-      <div class="contact-info">
-        <h3>Let's Connect</h3>
-        <p>I'm always interested in new opportunities, collaborations, and interesting projects. Feel free to reach out if you'd like to discuss cloud-native architecture, AI/ML, or platform engineering.</p>
+              <div class="contact-info">
+          <h3>Let's Connect</h3>
+          <p>I'm always interested in new opportunities, collaborations, and interesting projects. Feel free to reach out if you'd like to discuss cloud architecture, GenAI innovations, energy intelligence platforms, or technology evangelism.</p>
         
         <div class="contact-details">
           <div class="contact-item">
