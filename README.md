@@ -13,7 +13,6 @@ I'm **Ravindra Naik**, a Senior Engineering Manager with over 12 years of experi
 - **IIT Guwahati** alumnus (2009-2013)
 - **2K+ LinkedIn followers** and active tech community member
 - **Patent holder** for smart communication systems
-- **Award winner** for innovation and contributions
 
 ## Portfolio Sections
 
@@ -25,30 +24,28 @@ I'm **Ravindra Naik**, a Senior Engineering Manager with over 12 years of experi
 
 ### 💡 Featured Projects
 
-1. **Kitsune Open Source Compiler** (2020-Present)
-   - Open-source compiler and backend system
-   - Compiler architecture and language processing
-   - Community contribution and optimization
+1. **Kitsune Serverless Framework** (Dec 2015 - Dec 2017)
+   - Initial contributor at NowFloats
+   - UI language design and compiler architecture
+   - Cloud-agnostic serverless platform
 
-2. **Patent-Pending Virtual Agent (RIA)** (2015-Present)
-   - AI-powered virtual agent for business automation
-   - Natural language processing and website generation
-   - Patent-pending technology innovation
+2. **Patent-Pending Virtual Agent (RIA)** (Nov 2014 - Dec 2015)
+   - AI-powered virtual assistant for SMB websites
+   - SEO automation and lead conversion
+   - Patent-pending technology (IN 3262/CHE/2015)
 
-3. **Mobile Web-Builder Application** (2018-2020)
-   - Mobile-first web development platform
-   - Drag-and-drop interface design
-   - Cross-platform compatibility
+3. **Boost 360 iPhone Application** (Mar 2014 - Dec 2014)
+   - Full-stack iOS development
+   - In-app purchases and backend APIs
+   - SEO automation and analytics integration
 
-4. **Legacy Platform Modernization** (2016-2019)
-   - Microservices and REST/OData API design
-   - Legacy system integration and modernization
-   - Platform stability improvements
+4. **Energy Exemplar Platform Projects** (2022-Present)
+   - Cloud-native architecture and microservices
+   - GenAI initiatives and platform engineering
+   - Legacy system modernization
 
-### 🏆 Awards & Recognition
+### 🏆 Patent
 
-- **Special Mention Innovation Demo** - Energy Exemplar (Oct 2023)
-- **Shooting Star of the Year** - NowFloats (Mar 2016)
 - **Patent**: Smart Communication System for Business Owner Engagement (IN 3262/CHE/2015)
 
 ### 🎓 Education
@@ -109,11 +106,9 @@ My blog covers technical topics and insights from my professional journey:
 - **LinkedIn**: [naik899](https://www.linkedin.com/in/naik899/)
 - **GitHub**: [naik899](https://github.com/naik899)
 - **Location**: Bengaluru, Karnataka, India
-- **Email**: ravi.naik@example.com
+- **Email**: naik899@gmail.com
 
-## Volunteering
 
-I'm actively involved with **Save the Children, India** (Nov 2015 - Present), contributing to causes that matter and using technology as a force for good.
 
 ## Languages
 

@@ -26,7 +26,7 @@ layout: default
         
         <p>My expertise includes designing and implementing microservices and REST/OData APIs to modernize legacy platforms, improving platform stability and maintainability. I've built open-source compilers, developed patent-pending virtual agents, and created innovative mobile web-builder applications that drive product innovation.</p>
         
-        <p>When I'm not coding, I volunteer with Save the Children, India, contributing to causes that matter. I believe in using technology as a force for good and continuously learning to stay at the forefront of innovation.</p>
+        <p>I believe in using technology as a force for good and continuously learning to stay at the forefront of innovation.</p>
       </div>
       
       <div class="about-stats">
@@ -192,20 +192,20 @@ layout: default
     <div class="projects-grid">
       <div class="project-card">
         <div class="project-content">
-          <h3>Kitsune Open Source Compiler</h3>
-          <p class="project-date">2020 - Present</p>
-          <p>Built an open-source compiler and backend system for Kitsune, a modern programming language. This project demonstrates deep expertise in compiler design, language processing, and open-source development.</p>
+          <h3>Kitsune Serverless Framework</h3>
+          <p class="project-date">Dec 2015 - Dec 2017</p>
+          <p>Initial contributor to the Kitsune serverless framework at NowFloats, designing its UI language, compiler, and backend engine. This project enabled businesses to launch and manage web applications seamlessly.</p>
           <ul>
-            <li>Compiler architecture and design</li>
-            <li>Backend optimization and code generation</li>
-            <li>Open source community contribution</li>
-            <li>Language processing and parsing</li>
+            <li>UI language design and compiler architecture</li>
+            <li>Backend engine development</li>
+            <li>Cloud-agnostic platform design</li>
+            <li>Serverless framework implementation</li>
           </ul>
           <div class="project-tags">
+            <span class="tag">Serverless</span>
             <span class="tag">Compiler</span>
-            <span class="tag">Open Source</span>
-            <span class="tag">Language Design</span>
-            <span class="tag">Backend</span>
+            <span class="tag">Framework</span>
+            <span class="tag">NowFloats</span>
           </div>
         </div>
       </div>
@@ -213,13 +213,13 @@ layout: default
       <div class="project-card">
         <div class="project-content">
           <h3>Patent-Pending Virtual Agent (RIA)</h3>
-          <p class="project-date">Apr 2015 - Present</p>
-          <p>A revolutionary virtual agent (RIA - Relationship Intelligence Agent) that helps business owners create, maintain, and update their websites through natural conversation. This patent-pending technology drives product innovation.</p>
+          <p class="project-date">Nov 2014 - Dec 2015</p>
+          <p>Developed "RIA" (Relationship Intelligence Agent) — a patent-pending virtual assistant on the NowFloats platform that proactively monitors SMB websites to deliver personalized suggestions, helping merchants improve SEO and convert website visits into leads.</p>
           <ul>
             <li>AI-powered natural language processing</li>
             <li>Search Engine Optimization integration</li>
-            <li>Business website generation</li>
-            <li>Patent-pending technology</li>
+            <li>Automated content prompts and analytics</li>
+            <li>Patent-pending technology (IN 3262/CHE/2015)</li>
           </ul>
           <div class="project-tags">
             <span class="tag">AI/ML</span>
@@ -232,20 +232,20 @@ layout: default
       
       <div class="project-card">
         <div class="project-content">
-          <h3>Mobile Web-Builder Application</h3>
-          <p class="project-date">2018 - 2020</p>
-          <p>Developed an innovative mobile web-builder application that enables users to create professional websites on mobile devices. This project showcases expertise in mobile development and user experience design.</p>
+          <h3>Boost 360 iPhone Application</h3>
+          <p class="project-date">Mar 2014 - Dec 2014</p>
+          <p>Built the iPhone version of Boost 360 as a full-stack developer, delivering end-to-end functionality—from customer-facing UI and in-app purchases to backend APIs needed for site creation, SEO automation, and analytics integration.</p>
           <ul>
-            <li>Mobile-first web development</li>
-            <li>Drag-and-drop interface design</li>
-            <li>Responsive web generation</li>
-            <li>Cross-platform compatibility</li>
+            <li>Full-stack iOS development</li>
+            <li>In-app purchase implementation</li>
+            <li>Backend API development</li>
+            <li>SEO automation and analytics</li>
           </ul>
           <div class="project-tags">
-            <span class="tag">Mobile</span>
-            <span class="tag">Web Builder</span>
-            <span class="tag">UI/UX</span>
-            <span class="tag">Cross-Platform</span>
+            <span class="tag">iOS</span>
+            <span class="tag">Full-Stack</span>
+            <span class="tag">Mobile App</span>
+            <span class="tag">NowFloats</span>
           </div>
         </div>
       </div>
@@ -305,26 +305,7 @@ layout: default
   </div>
 </section>
 
-<section id="awards" class="section">
-  <div class="container">
-    <h2 class="section-title">Awards & Recognition</h2>
-    <div class="awards-grid">
-      <div class="award-item">
-        <h3>Special Mention Innovation Demo</h3>
-        <p class="award-org">Energy Exemplar</p>
-        <p class="award-date">October 2023</p>
-        <p>Recognized for innovative contributions to platform engineering and cloud-native solutions.</p>
-      </div>
-      
-      <div class="award-item">
-        <h3>Shooting Star of the Year</h3>
-        <p class="award-org">NowFloats</p>
-        <p class="award-date">March 2016</p>
-        <p>Awarded for exceptional contributions and dedication to NowFloats during 2015-16.</p>
-      </div>
-    </div>
-  </div>
-</section>
+
 
 <section id="patents" class="section">
   <div class="container">
@@ -353,6 +334,10 @@ layout: default
           <div class="contact-item">
             <span class="contact-label">LinkedIn:</span>
             <a href="https://www.linkedin.com/in/naik899/" target="_blank">naik899</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Email:</span>
+            <a href="mailto:naik899@gmail.com">naik899@gmail.com</a>
           </div>
           <div class="contact-item">
             <span class="contact-label">GitHub:</span>
