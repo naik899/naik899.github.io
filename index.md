@@ -2,9 +2,61 @@
 layout: page
 title: Ravindra Naik - Cloud Architect & GenAI Evangelist
 description: Cloud Architect and GenAI Evangelist with 12+ years of expertise in scalable systems, AI automation, and energy intelligence platforms
+keywords: Cloud Architect, GenAI Evangelist, Energy Intelligence, PLEXOS, AI Agent, Energy Markets, Cloud Platform, Ravindra Naik
+author: Ravindra Naik
+image: /assets/images/ravi.jpeg
+url: https://naik899.github.io
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+
+<!-- Meta Tags for SEO and Social Media -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Cloud Architect and GenAI Evangelist with 12+ years of expertise in scalable systems, AI automation, and energy intelligence platforms">
+<meta name="keywords" content="Cloud Architect, GenAI Evangelist, Energy Intelligence, PLEXOS, AI Agent, Energy Markets, Cloud Platform, Ravindra Naik">
+<meta name="author" content="Ravindra Naik">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://naik899.github.io/">
+<meta property="og:title" content="Ravindra Naik - Cloud Architect & GenAI Evangelist">
+<meta property="og:description" content="Cloud Architect and GenAI Evangelist with 12+ years of expertise in scalable systems, AI automation, and energy intelligence platforms">
+<meta property="og:image" content="https://naik899.github.io/assets/images/ravi.jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Ravindra Naik Portfolio">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://naik899.github.io/">
+<meta property="twitter:title" content="Ravindra Naik - Cloud Architect & GenAI Evangelist">
+<meta property="twitter:description" content="Cloud Architect and GenAI Evangelist with 12+ years of expertise in scalable systems, AI automation, and energy intelligence platforms">
+<meta property="twitter:image" content="https://naik899.github.io/assets/images/ravi.jpeg">
+<meta property="twitter:creator" content="@naik899">
+
+<!-- LinkedIn -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="profile">
+<meta property="profile:first_name" content="Ravindra">
+<meta property="profile:last_name" content="Naik">
+<meta property="profile:username" content="naik899">
+
+<!-- Additional SEO -->
+<meta name="theme-color" content="#667eea">
+<meta name="msapplication-TileColor" content="#667eea">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Ravindra Naik">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://naik899.github.io/">
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
 <!-- Hero Section -->
 <section id="hero" class="hero-section">
