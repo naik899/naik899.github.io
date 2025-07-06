@@ -14,7 +14,7 @@ description: Cloud-native and Full-stack Platform Engineer with 12+ years of exp
         <div class="hero-badge">👋 Welcome to my portfolio</div>
         <h1 class="hero-title">
           <span class="hero-name">Ravindra Naik</span>
-        </h1>
+    </h1>
         <p class="hero-subtitle">Cloud Architect & GenAI Evangelist</p>
         <p class="hero-role">Energy Intelligence Platform @ Energy Exemplar</p>
         <p class="hero-description">
@@ -85,7 +85,7 @@ description: Cloud-native and Full-stack Platform Engineer with 12+ years of exp
         <div class="timeline-content">
           <div class="timeline-header">
             <h3>Cloud Architect & GenAI Evangelist</h3>
-            <span class="company">Energy Exemplar</span>
+            <span class="company"><a href="https://energyexemplar.com" target="_blank">Energy Exemplar</a></span>
             <span class="duration">Jan 2024 - Present</span>
           </div>
           <p>Lead the Energy Intelligence Platform initiative, architecting cloud-native solutions and pioneering GenAI innovations for the energy sector. Transform the PLEXOS® energy simulation platform into an intelligent, AI-augmented SaaS solution that empowers energy professionals with cutting-edge analytics and insights.</p>
@@ -97,7 +97,7 @@ description: Cloud-native and Full-stack Platform Engineer with 12+ years of exp
         <div class="timeline-content">
           <div class="timeline-header">
             <h3>Principal Software Engineer</h3>
-            <span class="company">Energy Exemplar</span>
+            <span class="company"><a href="https://energyexemplar.com" target="_blank">Energy Exemplar</a></span>
             <span class="duration">Jan 2022 - Jan 2024</span>
           </div>
           <p>Led a team of 7 to optimize and scale the PLEXOS Cloud simulation platform, leveraging autoscaling and usage-based pricing to reduce simulation costs, while maintaining high availability. Expanded simulation throughput reliably, enabling customers to run thousands of scenarios in parallel and enhancing decision-making speed.</p>
@@ -109,7 +109,7 @@ description: Cloud-native and Full-stack Platform Engineer with 12+ years of exp
         <div class="timeline-content">
           <div class="timeline-header">
             <h3>Lead Engineer</h3>
-            <span class="company">Maersk Global Service Centres</span>
+            <span class="company"><a href="https://maersk.com" target="_blank">Maersk Global Service Centres</a></span>
             <span class="duration">Nov 2020 - Jan 2022</span>
           </div>
           <p>Owned platform reliability and performance, monitoring business-critical services, handling incidents, and delivering reusable libraries for cross-cutting concerns to accelerate future delivery. Drove architecture and DevSecOps best practices, including CI/CD, TDD, and clean code standards, while collaborating with product owners and enterprise architects to align technical roadmaps with business goals.</p>
@@ -121,7 +121,7 @@ description: Cloud-native and Full-stack Platform Engineer with 12+ years of exp
         <div class="timeline-content">
           <div class="timeline-header">
             <h3>Solutions Architect</h3>
-            <span class="company">Experitest</span>
+            <span class="company"><a href="https://experitest.com" target="_blank">Experitest</a></span>
             <span class="duration">Jul 2019 - Nov 2020</span>
           </div>
           <p>Led technical pre-sales and PoC engagements with enterprise clients—bringing cross-browser, mobile, and real-device test automation into their DevOps pipelines using Experitest's SeeTest platform. Integrated open-source frameworks (Appium, Selenium, Jenkins, etc.) to design scalable demo environments that accelerated customer onboarding and adoption.</p>
@@ -133,7 +133,7 @@ description: Cloud-native and Full-stack Platform Engineer with 12+ years of exp
         <div class="timeline-content">
           <div class="timeline-header">
             <h3>Senior Software Engineer</h3>
-            <span class="company">Ivanti</span>
+            <span class="company"><a href="https://ivanti.com" target="_blank">Ivanti</a></span>
             <span class="duration">Dec 2017 - Jul 2019</span>
           </div>
           <p>Led the migration of legacy SOAP APIs to RESTful microservices, leveraging OData for powerful, flexible querying across core platform modules. Improved platform stability and maintainability by refactoring internal libraries and modular components throughout the Ivanti Service Manager product.</p>
@@ -145,7 +145,7 @@ description: Cloud-native and Full-stack Platform Engineer with 12+ years of exp
         <div class="timeline-content">
           <div class="timeline-header">
             <h3>Senior Software Engineer</h3>
-            <span class="company">NowFloats</span>
+            <span class="company"><a href="https://nowfloats.com" target="_blank">NowFloats</a></span>
             <span class="duration">Dec 2015 - Dec 2017</span>
           </div>
           <p>Built and refined the full-stack Kitsune serverless framework, designing its UI language, compiler, and backend engine to enable businesses to launch and manage web applications on NowFloats seamlessly. Developed key algorithms and backend services, transforming Kitsune into an efficient, cloud-agnostic platform.</p>
@@ -157,7 +157,7 @@ description: Cloud-native and Full-stack Platform Engineer with 12+ years of exp
         <div class="timeline-content">
           <div class="timeline-header">
             <h3>Software Engineer</h3>
-            <span class="company">NowFloats</span>
+            <span class="company"><a href="https://nowfloats.com" target="_blank">NowFloats</a></span>
             <span class="duration">Nov 2014 - Dec 2015</span>
           </div>
           <p>Developed "RIA" (Relationship Intelligence Agent) — a patent-pending virtual assistant on the NowFloats platform that proactively monitors SMB websites to deliver personalized suggestions, helping merchants improve SEO and convert website visits into leads.</p>
@@ -169,7 +169,7 @@ description: Cloud-native and Full-stack Platform Engineer with 12+ years of exp
         <div class="timeline-content">
           <div class="timeline-header">
             <h3>iPhone Developer</h3>
-            <span class="company">NowFloats</span>
+            <span class="company"><a href="https://nowfloats.com" target="_blank">NowFloats</a></span>
             <span class="duration">Mar 2014 - Dec 2014</span>
           </div>
           <p>Built the iPhone version of Boost 360 as a full-stack developer, delivering end-to-end functionality—from customer-facing UI and in-app purchases to backend APIs needed for site creation, SEO automation, and analytics integration.</p>
@@ -239,7 +239,7 @@ description: Cloud-native and Full-stack Platform Engineer with 12+ years of exp
           <li>Mobile Web Development</li>
           <li>Compiler Development</li>
           <li>Legacy System Integration</li>
-        </ul>
+  </ul>
       </div>
     </div>
   </div>
@@ -301,7 +301,7 @@ description: Cloud-native and Full-stack Platform Engineer with 12+ years of exp
           <li>Cloud-native platform modernization</li>
           <li>AI-augmented simulation capabilities</li>
           <li>Energy sector innovation strategy</li>
-        </ul>
+  </ul>
         <div class="project-tags">
           <span class="tag">GenAI</span>
           <span class="tag">Energy Intelligence</span>

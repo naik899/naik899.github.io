@@ -369,6 +369,17 @@
   margin-right: 1rem;
 }
 
+.company a {
+  color: #667eea;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.company a:hover {
+  color: #5a67d8;
+  text-decoration: underline;
+}
+
 .duration {
   color: #666;
   font-size: 0.9rem;
