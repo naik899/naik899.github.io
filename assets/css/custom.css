@@ -1,5 +1,10 @@
 /* Custom styles for Ravindra Naik's portfolio */
 
+/* Override DevPortfolio theme styles */
+.page {
+  padding-top: 0;
+}
+
 /* Header enhancements */
 .header-description {
   font-size: 1.2rem;
@@ -425,6 +430,20 @@
   .stat-number {
     font-size: 2rem;
   }
+}
+
+/* Blog specific overrides */
+.post,
+.blog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Ensure proper spacing with DevPortfolio theme */
+.page .post,
+.page .blog-container {
+  margin-top: 2rem;
 }
 
 /* Print styles */

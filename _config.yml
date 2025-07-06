@@ -3,6 +3,12 @@
 # Use the DevPortfolio theme by Ryan Fitzgerald
 remote_theme: RyanFitzgerald/devportfolio
 
+# Include custom CSS
+sass:
+  load_paths:
+    - _sass
+    - assets/css
+
 # Site settings
 lang: en-US
 title: Ravindra Naik

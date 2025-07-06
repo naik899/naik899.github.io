@@ -1,6 +1,10 @@
 ---
-layout: default
+layout: page
+title: Ravindra Naik - Senior Engineering Manager | Cloud Architecture & Gen AI
+description: Cloud-native and Full-stack Platform Engineer with 12+ years of expertise in scalable systems, API modernization, and AI automation
 ---
+
+<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 
 <header class="header">
   <div class="container">

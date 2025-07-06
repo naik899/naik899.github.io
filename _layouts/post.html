@@ -1,0 +1,194 @@
+---
+layout: default
+---
+
+<style>
+/* Blog post specific styles */
+.post-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 8px;
+}
+
+.post-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.post-meta {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+.post-categories {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.category-tag {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.post-content {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #333;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.post-content h1 {
+  font-size: 2rem;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.5rem;
+}
+
+.post-content h2 {
+  font-size: 1.75rem;
+  color: #007bff;
+}
+
+.post-content h3 {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.post-content p {
+  margin-bottom: 1.5rem;
+}
+
+.post-content ul,
+.post-content ol {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+.post-content li {
+  margin-bottom: 0.5rem;
+}
+
+.post-content code {
+  background: #f8f9fa;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  color: #e83e8c;
+}
+
+.post-content pre {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border: 1px solid #e9ecef;
+}
+
+.post-content pre code {
+  background: none;
+  padding: 0;
+  color: #333;
+}
+
+.post-content blockquote {
+  border-left: 4px solid #007bff;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: #666;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+}
+
+.post-navigation {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e9ecef;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-navigation a {
+  color: #007bff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.post-navigation a:hover {
+  background: #007bff;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .post-title {
+    font-size: 2rem;
+  }
+  
+  .post-content {
+    padding: 0 1rem;
+  }
+  
+  .post-navigation {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+</style>
+
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+        {{ page.date | date: "%B %d, %Y" }}
+      </time>
+      {% if page.author %}
+        • By {{ page.author }}
+      {% endif %}
+    </div>
+    {% if page.categories %}
+      <div class="post-categories">
+        {% for category in page.categories %}
+          <span class="category-tag">{{ category }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <nav class="post-navigation">
+    <a href="/blog/" class="back-to-blog">← Back to Blog</a>
+    <a href="/" class="back-to-home">← Back to Portfolio</a>
+  </nav>
+</article> 
