@@ -252,61 +252,61 @@ description: Cloud-native and Full-stack Platform Engineer with 12+ years of exp
     <div class="projects-grid">
       <div class="project-card">
         <div class="project-header">
-          <h3>Kitsune Serverless Framework</h3>
-          <span class="project-date">Dec 2015 - Dec 2017</span>
+          <h3>EU Energy Market Expert - AI Agent</h3>
+          <span class="project-date">2024 - Present</span>
         </div>
-        <p>Initial contributor to the Kitsune serverless framework at NowFloats, designing its UI language, compiler, and backend engine. This project enabled businesses to launch and manage web applications seamlessly.</p>
+        <p>Built an AI Agent persona that leverages Energy Exemplar's powerful datasets to deliver insights and meaningful solutions for energy traders across European markets. This intelligent system provides real-time market analysis, trend predictions, and strategic recommendations.</p>
         <ul>
-          <li>UI language design and compiler architecture</li>
-          <li>Backend engine development</li>
-          <li>Cloud-agnostic platform design</li>
-          <li>Serverless framework implementation</li>
+          <li>AI Agent development with advanced persona engineering</li>
+          <li>Integration with Energy Exemplar's comprehensive datasets</li>
+          <li>Real-time market analysis and trend predictions</li>
+          <li>Strategic insights delivery for energy traders</li>
         </ul>
         <div class="project-tags">
-          <span class="tag">Serverless</span>
-          <span class="tag">Compiler</span>
-          <span class="tag">Framework</span>
-          <span class="tag">NowFloats</span>
+          <span class="tag">AI Agent</span>
+          <span class="tag">Energy Markets</span>
+          <span class="tag">Data Analytics</span>
+          <span class="tag">Energy Exemplar</span>
         </div>
       </div>
       
       <div class="project-card">
         <div class="project-header">
-          <h3>Patent-Pending Virtual Agent (RIA)</h3>
-          <span class="project-date">Nov 2014 - Dec 2015</span>
+          <h3>PLEXOS Simulations Platform</h3>
+          <span class="project-date">2022 - Present</span>
         </div>
-        <p>Developed "RIA" (Relationship Intelligence Agent) — a patent-pending virtual assistant on the NowFloats platform that proactively monitors SMB websites to deliver personalized suggestions, helping merchants improve SEO and convert website visits into leads.</p>
+        <p>Played a key role in scaling the PLEXOS simulations platform (job platform) to run thousands of jobs on cloud infrastructure with exceptional reliability, observability, and extensibility. This platform enables energy professionals to execute complex simulations at scale.</p>
         <ul>
-          <li>AI-powered natural language processing</li>
-          <li>Search Engine Optimization integration</li>
-          <li>Automated content prompts and analytics</li>
-          <li>Patent-pending technology (IN 3262/CHE/2015)</li>
+          <li>Cloud-native job platform architecture</li>
+          <li>Scalable simulation execution (thousands of concurrent jobs)</li>
+          <li>Advanced observability and monitoring systems</li>
+          <li>High-reliability cloud infrastructure design</li>
         </ul>
         <div class="project-tags">
-          <span class="tag">AI/ML</span>
-          <span class="tag">NLP</span>
-          <span class="tag">Virtual Agent</span>
-          <span class="tag">Patent</span>
+          <span class="tag">Cloud Platform</span>
+          <span class="tag">Simulations</span>
+          <span class="tag">Scalability</span>
+          <span class="tag">PLEXOS</span>
         </div>
       </div>
       
       <div class="project-card">
         <div class="project-header">
-          <h3>Boost 360 iPhone Application</h3>
-          <span class="project-date">Mar 2014 - Dec 2014</span>
+          <h3>Energy Intelligence Platform</h3>
+          <span class="project-date">2024 - Present</span>
         </div>
-        <p>Built the iPhone version of Boost 360 as a full-stack developer, delivering end-to-end functionality—from customer-facing UI and in-app purchases to backend APIs needed for site creation, SEO automation, and analytics integration.</p>
+        <p>Leading the transformation of PLEXOS® into an intelligent, AI-augmented energy simulation platform. This initiative combines cloud-native architecture with GenAI innovations to empower energy professionals with cutting-edge analytics and insights.</p>
         <ul>
-          <li>Full-stack iOS development</li>
-          <li>In-app purchase implementation</li>
-          <li>Backend API development</li>
-          <li>SEO automation and analytics</li>
+          <li>GenAI integration for energy analytics</li>
+          <li>Cloud-native platform modernization</li>
+          <li>AI-augmented simulation capabilities</li>
+          <li>Energy sector innovation strategy</li>
         </ul>
         <div class="project-tags">
-          <span class="tag">iOS</span>
-          <span class="tag">Full-Stack</span>
-          <span class="tag">Mobile App</span>
-          <span class="tag">NowFloats</span>
+          <span class="tag">GenAI</span>
+          <span class="tag">Energy Intelligence</span>
+          <span class="tag">Platform Modernization</span>
+          <span class="tag">Innovation</span>
         </div>
       </div>
     </div>
