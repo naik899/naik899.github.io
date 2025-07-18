@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Semantic Kernel Updates: June-July 2025 - Enhanced Multimodal AI and Agent Orchestration"
-date: 2025-07-20
+date: 2025-07-19
 categories: [Semantic Kernel, AI, Microsoft, .NET, Python]
 tags: [semantic-kernel, ai-development, microsoft, dotnet, python, multimodal-ai, agent-orchestration, vector-data, observability]
 author: Ravindra Naik
