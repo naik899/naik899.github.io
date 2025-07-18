@@ -226,7 +226,7 @@ layout: default
           {% if post.categories %}
             <div class="post-categories">
               {% for category in post.categories %}
-                <a href="/blog/category/{{ category | downcase }}/" class="category-tag">{{ category }}</a>
+                <a href="/categories/#{{ category | downcase | replace: ' ', '-' }}" class="category-tag">{{ category }}</a>
               {% endfor %}
             </div>
           {% endif %}
@@ -249,12 +249,10 @@ layout: default
     <aside class="blog-sidebar">
       <h3>Categories</h3>
       <ul>
-        <li><a href="/blog/category/microsoft-orleans/">Microsoft Orleans</a></li>
-        <li><a href="/blog/category/distributed-systems/">Distributed Systems</a></li>
-        <li><a href="/blog/category/dotnet-development/">.NET Development</a></li>
-        <li><a href="/blog/category/cloud-computing/">Cloud Computing</a></li>
-        <li><a href="/blog/category/architecture/">Architecture</a></li>
-        <li><a href="/blog/category/best-practices/">Best Practices</a></li>
+        {% assign categories = site.posts | map: "categories" | uniq | sort %}
+        {% for category in categories %}
+          <li><a href="/categories/#{{ category | downcase | replace: ' ', '-' }}">{{ category }}</a></li>
+        {% endfor %}
       </ul>
       
       <h3>Connect</h3>

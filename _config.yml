@@ -44,6 +44,8 @@ navigation:
     url: /#projects
   - title: Blog
     url: /blog/
+  - title: Categories
+    url: /categories/
   - title: Contact
     url: /#contact
 
