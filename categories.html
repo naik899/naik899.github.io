@@ -5,7 +5,7 @@ permalink: /categories/
 description: "Browse posts by category"
 ---
 
-{% assign categories = site.posts | map: "categories" | uniq | sort %}
+{% assign categories = site.categories | sort %}
 
 <div class="categories-header">
   <h1>Categories</h1>
@@ -13,10 +13,11 @@ description: "Browse posts by category"
 </div>
 
 {% for category in categories %}
+  {% assign category_name = category[0] %}
+  {% assign category_posts = category[1] | sort: 'date' | reverse %}
   <div class="category-section">
-    <h2 id="{{ category | downcase | replace: ' ', '-' }}">{{ category }}</h2>
-    {% assign category_posts = site.posts | where_exp: "post", "post.categories contains category" %}
-    
+    <h2 id="{{ category_name | downcase | replace: ' ', '-' }}">{{ category_name }}</h2>
+
     {% for post in category_posts %}
     <article class="blog-post-preview">
       <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
