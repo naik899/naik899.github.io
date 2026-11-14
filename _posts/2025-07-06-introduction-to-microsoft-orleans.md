@@ -6,9 +6,6 @@ categories: [Microsoft Orleans, Distributed Systems, .NET]
 tags: [orleans, distributed-systems, dotnet, microservices, actor-model, cloud-computing]
 author: Ravindra Naik
 ---
-
-# Introduction to Microsoft Orleans
-
 Microsoft Orleans is a framework that brings the Actor Model to .NET, making it easier to build distributed, scalable applications. In this post, I'll introduce you to the core concepts of Orleans and show you how to get started with building actor-based applications.
 
 ## What is Microsoft Orleans?

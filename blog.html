@@ -1,0 +1,54 @@
+---
+layout: page
+title: Blog
+permalink: /blog/
+description: Notes on cloud architecture, Gen AI agents and the Microsoft AI stack.
+---
+{% assign cats = site.categories | sort %}
+<div class="chips filters" role="group" aria-label="Filter by topic">
+  <button class="chip" type="button" data-cat="" aria-pressed="true">All</button>
+  {% for c in cats %}<button class="chip" type="button" data-cat="{{ c[0] | slugify }}" aria-pressed="false">{{ c[0] }}</button>{% endfor %}
+</div>
+
+{% assign by_year = site.posts | group_by_exp: "p", "p.date | date: '%Y'" %}
+{% for y in by_year %}
+<section class="year-group">
+  <h2 class="year">{{ y.name }}</h2>
+  <ul class="post-list">
+    {% for post in y.items %}
+    <li data-cats="{% for c in post.categories %}{{ c | slugify }} {% endfor %}">
+      <a class="post-link" href="{{ post.url | relative_url }}">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %-d' }}</time>
+        <div>
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+        </div>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}
+
+<script>
+  (function () {
+    var btns = document.querySelectorAll('[data-cat]');
+    function apply(cat) {
+      btns.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.cat === cat); });
+      document.querySelectorAll('[data-cats]').forEach(function (li) {
+        li.hidden = cat && (' ' + li.dataset.cats).indexOf(' ' + cat + ' ') === -1;
+      });
+      document.querySelectorAll('.year-group').forEach(function (g) {
+        g.hidden = !g.querySelector('[data-cats]:not([hidden])');
+      });
+    }
+    btns.forEach(function (b) {
+      b.addEventListener('click', function () {
+        apply(b.dataset.cat);
+        history.replaceState(null, '', b.dataset.cat ? '#' + b.dataset.cat : location.pathname);
+      });
+    });
+    var h = location.hash.slice(1);
+    if (h && document.querySelector('[data-cat="' + CSS.escape(h) + '"]')) apply(h);
+  })();
+</script>

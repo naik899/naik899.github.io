@@ -1,0 +1,53 @@
+{%- assign home = site.url | append: site.baseurl -%}
+# ravindra-naik.profile.yaml — the same facts as the human view, built from the site's data
+name: "Ravindra Naik"
+headline: {{ site.tagline | jsonify }}
+summary: {{ site.description | strip | jsonify }}
+location: {{ site.author.location | jsonify }}
+employer: "Energy Exemplar"
+experience: "12+ years"
+now_building: {{ site.now.text | jsonify }}
+
+links:
+  site: "{{ home }}/"
+  linkedin: "https://www.linkedin.com/in/naik899/"
+  github: "https://github.com/naik899"
+  youtube: {{ site.youtube.url | jsonify }}
+  email: {{ site.author.email | jsonify }}
+
+skills:
+{%- for s in site.data.skills %}
+  {{ s.group | slugify | replace: '-', '_' }}: {{ s.items | jsonify }}
+{%- endfor %}
+
+selected_work:
+{%- for p in site.data.projects %}
+  - name: {{ p.name | jsonify }}
+    when: {{ p.when | jsonify }}
+    summary: {{ p.summary | strip | jsonify }}
+{%- endfor %}
+
+career:
+{%- for j in site.data.experience %}
+  - role: {{ j.role | jsonify }}
+    org: {{ j.org | jsonify }}
+    dates: {{ j.dates | jsonify }}
+    summary: {{ j.summary | strip | jsonify }}
+{%- endfor %}
+
+patent: "Patent-pending: Smart Communication System for Business Owner Engagement (IN 3262/CHE/2015)"
+education: "Indian Institute of Technology Guwahati, 2009-2013"
+
+latest_posts:
+{%- for post in site.posts limit: 5 %}
+  - title: {{ post.title | jsonify }}
+    date: "{{ post.date | date: '%Y-%m-%d' }}"
+    url: "{{ home }}{{ post.url }}"
+{%- endfor %}
+
+latest_videos:  # YouTube: {{ site.youtube.channel }}
+{%- for v in site.data.videos limit: 5 %}
+  - title: {{ v.title | jsonify }}
+    date: "{{ v.published | date: '%Y-%m-%d' }}"
+    url: "https://www.youtube.com/{% if v.short %}shorts/{{ v.id }}{% else %}watch?v={{ v.id }}{% endif %}"
+{%- endfor %}

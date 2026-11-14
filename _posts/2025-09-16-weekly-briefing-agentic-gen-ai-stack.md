@@ -5,19 +5,17 @@ date: 2025-09-16
 categories: [Agentic AI, Weekly Summary]
 tags: [weekly-briefing, azure-ai-foundry, semantic-kernel, autogen, aws-bedrock, langchain, langgraph, langsmith, crewai, agentic-ai]
 author: Ravindra Naik
+excerpt: "A roundup of what changed this week across Azure AI Foundry, Semantic Kernel, AutoGen, AWS Bedrock, LangChain and CrewAI, and what it means for teams shipping agents."
 ---
-
-# Weekly Briefing: The Agentic Gen-AI Stack Is Getting Practically Useful
-
-_Week of Sep 9–16, 2025 • by an Applied AI Architect (you can be too!)_
+_Week of Sep 9–16, 2025_
 
 ## TL;DR — What moved this week and why it matters
 
-- **Azure AI Foundry**: [GPT-5 family models are now available](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/whats-new?utm_source=chatgpt.com) (with Model Router support) and [“Spillover” is GA](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/whats-new?utm_source=chatgpt.com) → higher reasoning options, better cost/latency control, and smoother capacity management.
-- **Semantic Kernel + AutoGen**: Microsoft is [merging AutoGen’s multi-agent features into Semantic Kernel](https://devblogs.microsoft.com/foundry/semantic-kernel-commitment-ai-innovation/?utm_source=chatgpt.com) → one path to production for agentic apps.
-- **AWS Bedrock**: [Inline code nodes in Flows (public preview)](https://aws.amazon.com/blogs/machine-learning/inline-code-nodes-now-supported-in-amazon-bedrock-flows-in-public-preview/?utm_source=chatgpt.com) and [Data Automation upgrades for video](https://aws.amazon.com/blogs/machine-learning/enhance-video-understanding-with-amazon-bedrock-data-automation-and-open-set-object-detection/?utm_source=chatgpt.com) → simpler pipelines, richer multimodal apps.
-- **LangChain + LangGraph + LangSmith**: [v1.0 alpha releases](https://blog.langchain.com/langchain-langchain-1-0-alpha-releases/?utm_source=chatgpt.com), [dynamic tool calling](https://changelog.langchain.com/announcements/dynamic-tool-calling-in-langgraph-agents?utm_source=chatgpt.com), and [Trace Mode in Studio](https://changelog.langchain.com/announcements/trace-mode-in-langgraph-studio?utm_source=chatgpt.com) → safer agent control and tighter observability.
-- **CrewAI**: [Qdrant vector search + RAG support](https://community.crewai.com/t/new-release-0-165-0/6941?utm_source=chatgpt.com), [improved tracing/eventing](https://community.crewai.com/t/crewai-version-0-177-0-release-notes/7008?utm_source=chatgpt.com), and [ongoing changelog updates](https://docs.crewai.com/changelog?utm_source=chatgpt.com) → more production-ready multi-agent orchestration with real memory.
+- **Azure AI Foundry**: [GPT-5 family models are now available](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/whats-new) (with Model Router support) and [“Spillover” is GA](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/whats-new) → higher reasoning options, better cost/latency control, and smoother capacity management.
+- **Semantic Kernel + AutoGen**: Microsoft is [merging AutoGen’s multi-agent features into Semantic Kernel](https://devblogs.microsoft.com/foundry/semantic-kernel-commitment-ai-innovation/) → one path to production for agentic apps.
+- **AWS Bedrock**: [Inline code nodes in Flows (public preview)](https://aws.amazon.com/blogs/machine-learning/inline-code-nodes-now-supported-in-amazon-bedrock-flows-in-public-preview/) and [Data Automation upgrades for video](https://aws.amazon.com/blogs/machine-learning/enhance-video-understanding-with-amazon-bedrock-data-automation-and-open-set-object-detection/) → simpler pipelines, richer multimodal apps.
+- **LangChain + LangGraph + LangSmith**: [v1.0 alpha releases](https://blog.langchain.com/langchain-langchain-1-0-alpha-releases/), [dynamic tool calling](https://changelog.langchain.com/announcements/dynamic-tool-calling-in-langgraph-agents), and [Trace Mode in Studio](https://changelog.langchain.com/announcements/trace-mode-in-langgraph-studio) → safer agent control and tighter observability.
+- **CrewAI**: [Qdrant vector search + RAG support](https://community.crewai.com/t/new-release-0-165-0/6941), [improved tracing/eventing](https://community.crewai.com/t/crewai-version-0-177-0-release-notes/7008), and [ongoing changelog updates](https://docs.crewai.com/changelog) → more production-ready multi-agent orchestration with real memory.
 
 ---
 
@@ -25,9 +23,9 @@ _Week of Sep 9–16, 2025 • by an Applied AI Architect (you can be too!)_
 
 ### What shipped
 
-- **GPT-5 models** are now supported in Azure AI Foundry ([source](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/whats-new?utm_source=chatgpt.com)).
-- **Model Router** can dynamically route prompts across models like `gpt-5`, `gpt-5-mini`, `gpt-5-nano` ([source](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/whats-new?utm_source=chatgpt.com)).
-- **Spillover** is GA to offload provisioned unit traffic bursts ([source](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/whats-new?utm_source=chatgpt.com)).
+- **GPT-5 models** are now supported in Azure AI Foundry ([source](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/whats-new)).
+- **Model Router** can dynamically route prompts across models like `gpt-5`, `gpt-5-mini`, `gpt-5-nano` ([source](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/whats-new)).
+- **Spillover** is GA to offload provisioned unit traffic bursts ([source](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/whats-new)).
 
 ### Why it matters
 
@@ -44,7 +42,7 @@ You can treat **model choice as policy**: balance cost, latency, and reasoning d
 
 ### What shipped
 
-Microsoft is [aligning AutoGen with Semantic Kernel](https://devblogs.microsoft.com/foundry/semantic-kernel-commitment-ai-innovation/?utm_source=chatgpt.com), unifying multi-agent patterns under one runtime.
+Microsoft is [aligning AutoGen with Semantic Kernel](https://devblogs.microsoft.com/foundry/semantic-kernel-commitment-ai-innovation/), unifying multi-agent patterns under one runtime.
 
 ### Why it matters
 
@@ -61,8 +59,8 @@ SK brings enterprise connectors + hosting; AutoGen brings agent patterns. Togeth
 
 ### What shipped
 
-- [Inline code nodes in Bedrock Flows (preview)](https://aws.amazon.com/blogs/machine-learning/inline-code-nodes-now-supported-in-amazon-bedrock-flows-in-public-preview/?utm_source=chatgpt.com) let you embed Python directly into flows.
-- [Data Automation for video](https://aws.amazon.com/blogs/machine-learning/enhance-video-understanding-with-amazon-bedrock-data-automation-and-open-set-object-detection/?utm_source=chatgpt.com) adds open-set object detection, auto-chaptering, and frame-level text detection.
+- [Inline code nodes in Bedrock Flows (preview)](https://aws.amazon.com/blogs/machine-learning/inline-code-nodes-now-supported-in-amazon-bedrock-flows-in-public-preview/) let you embed Python directly into flows.
+- [Data Automation for video](https://aws.amazon.com/blogs/machine-learning/enhance-video-understanding-with-amazon-bedrock-data-automation-and-open-set-object-detection/) adds open-set object detection, auto-chaptering, and frame-level text detection.
 
 ### Why it matters
 
@@ -79,10 +77,10 @@ Inline code removes the need for trivial Lambdas → less ops overhead. Video fe
 
 ### What shipped
 
-- [v1.0 alpha of LangChain & LangGraph](https://blog.langchain.com/langchain-langchain-1-0-alpha-releases/?utm_source=chatgpt.com) for both Python & JS.
-- [Dynamic tool calling](https://changelog.langchain.com/announcements/dynamic-tool-calling-in-langgraph-agents?utm_source=chatgpt.com) lets you expose tools contextually, increasing safety.
-- [Trace Mode in LangGraph Studio](https://changelog.langchain.com/announcements/trace-mode-in-langgraph-studio?utm_source=chatgpt.com) integrates with LangSmith for easier debugging.
-- [LangSmith API keys with org roles](https://changelog.langchain.com/?utm_source=chatgpt.com) improve security.
+- [v1.0 alpha of LangChain & LangGraph](https://blog.langchain.com/langchain-langchain-1-0-alpha-releases/) for both Python & JS.
+- [Dynamic tool calling](https://changelog.langchain.com/announcements/dynamic-tool-calling-in-langgraph-agents) lets you expose tools contextually, increasing safety.
+- [Trace Mode in LangGraph Studio](https://changelog.langchain.com/announcements/trace-mode-in-langgraph-studio) integrates with LangSmith for easier debugging.
+- [LangSmith API keys with org roles](https://changelog.langchain.com/) improve security.
 
 ### Why it matters
 
@@ -99,9 +97,9 @@ Safer tool use + deeper observability make LangChain ecosystem much more product
 
 ### What shipped
 
-- [QdrantVectorSearchTool + RAG provider support](https://community.crewai.com/t/new-release-0-165-0/6941?utm_source=chatgpt.com).
-- [Improved tracing and centralized events](https://community.crewai.com/t/crewai-version-0-177-0-release-notes/7008?utm_source=chatgpt.com).
-- [Regular changelog updates](https://docs.crewai.com/changelog?utm_source=chatgpt.com) with flow/CLI improvements.
+- [QdrantVectorSearchTool + RAG provider support](https://community.crewai.com/t/new-release-0-165-0/6941).
+- [Improved tracing and centralized events](https://community.crewai.com/t/crewai-version-0-177-0-release-notes/7008).
+- [Regular changelog updates](https://docs.crewai.com/changelog) with flow/CLI improvements.
 
 ### Why it matters
 
