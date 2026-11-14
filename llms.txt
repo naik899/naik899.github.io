@@ -1,0 +1,29 @@
+---
+layout: null
+sitemap: false
+---
+{%- assign home = site.url | append: site.baseurl -%}
+# Ravindra Naik
+
+> {{ site.description | strip }}
+
+Based in {{ site.author.location }}. Ravindra architects the cloud and Gen AI layer of PLEXOS® at Energy Exemplar, and explains how AI works on the YouTube channel {{ site.youtube.channel }}. Now building: {{ site.now.text }}.
+
+## Profile
+
+- [Structured profile (YAML)]({{ home }}/profile.yaml): identity, skills, selected work, career, latest posts and videos
+- [Homepage]({{ home }}/): overview, selected work and career timeline
+- [LinkedIn](https://www.linkedin.com/in/naik899/)
+- [GitHub](https://github.com/naik899)
+- Email: {{ site.author.email }}
+
+## Blog posts
+{% for post in site.posts %}
+- [{{ post.title }}]({{ home }}{{ post.url }}): {{ post.excerpt | strip_html | strip_newlines | truncatewords: 30 }}
+{%- endfor %}
+
+## Videos
+{% for v in site.data.videos limit: 10 %}
+- [{{ v.title }}](https://www.youtube.com/{% if v.short %}shorts/{{ v.id }}{% else %}watch?v={{ v.id }}{% endif %}){% if v.short %} (Short){% endif %}
+{%- endfor %}
+- [All videos]({{ home }}/videos/)

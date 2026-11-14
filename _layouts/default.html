@@ -6,6 +6,8 @@
   <meta name="color-scheme" content="light dark">
   {% seo %}
   {% feed_meta %}
+  {% if page.url == '/' %}{% include person-jsonld.html %}{% endif %}
+  <link rel="alternate" type="text/plain" title="llms.txt" href="{{ '/llms.txt' | relative_url }}">
   <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

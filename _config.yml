@@ -25,6 +25,11 @@ youtube:
   channel: The Caveman Reports
   url: https://www.youtube.com/@thecavemanreports
 
+# One line shown at the top of the homepage
+now:
+  text: a software factory run by AI agents
+  url: https://www.youtube.com/shorts/r6ulQ5jfvCU
+
 defaults:
   - scope: { path: "", type: posts }
     values: { layout: post, author: Ravindra Naik }

@@ -1,0 +1,11 @@
+# Edit freely: groups render as rows of chips on the homepage and in the agent view
+- group: Gen AI & agents
+  items: [AI agents, LLM workflows, Context engineering, Semantic Kernel, Azure AI Foundry, NLP]
+- group: Cloud & platform
+  items: [Cloud-native architecture, Microservices, Autoscaling, Observability, Docker, Kubernetes, Azure, AWS, GCP]
+- group: Architecture & APIs
+  items: [Distributed systems, Microsoft Orleans, Serverless, REST, OData, Legacy modernization]
+- group: Languages & tooling
+  items: [C#, .NET, Compilers, iOS]
+- group: Practices
+  items: [CI/CD, TDD, DevSecOps, Test automation, Appium, Selenium, Jenkins]

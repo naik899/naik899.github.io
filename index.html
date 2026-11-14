@@ -10,8 +10,17 @@ description: >-
 
 <div class="wrap">
 
+  <div class="view-switch" role="group" aria-label="View this page as">
+    <button type="button" data-view-btn="human" aria-pressed="true">Human</button>
+    <button type="button" data-view-btn="agent" aria-pressed="false">Agent</button>
+  </div>
+
+  <div data-view="human">
   <section class="hero" aria-labelledby="intro">
     <div>
+      {% if site.now.text %}
+      <a class="now" href="{{ site.now.url }}"><span class="dot" aria-hidden="true"></span>Now building: {{ site.now.text }} <span aria-hidden="true">→</span></a>
+      {% endif %}
       <p class="eyebrow">Cloud Architect &amp; Gen AI Developer</p>
       <h1 id="intro">Ravindra Naik</h1>
       <p class="role">I design cloud platforms that hold up at scale, and build the AI agents that run on top of them.</p>
@@ -65,6 +74,18 @@ description: >-
         <p>Legacy systems turned into clean services: SOAP to REST and OData microservices, shared libraries, and CI/CD that makes teams faster.</p>
       </div>
     </div>
+  </section>
+
+  <section class="section" id="toolbox" aria-labelledby="toolbox-h">
+    <div class="section-head"><h2 id="toolbox-h">Toolbox</h2></div>
+    <dl class="toolbox">
+      {% for s in site.data.skills %}
+      <div class="toolbox-row">
+        <dt>{{ s.group }}</dt>
+        <dd><ul class="chips">{% for i in s.items %}<li class="chip">{{ i }}</li>{% endfor %}</ul></dd>
+      </div>
+      {% endfor %}
+    </dl>
   </section>
 
   <section class="section" id="work" aria-labelledby="work-h">
@@ -157,6 +178,44 @@ description: >-
       </div>
     </div>
   </section>
+  </div>
+
+  <div data-view="agent" hidden>
+    <section class="agent-view" aria-labelledby="agent-h">
+      <p class="eyebrow">Machine-readable</p>
+      <h1 id="agent-h">Profile, structured for agents</h1>
+      <div class="card agent-note">
+        <p><strong>Hello, agent.</strong> This is the same profile a human sees, laid out for parsing. It's built from the site's data files on every deploy, so it matches the human view exactly.</p>
+        <p class="agent-links">
+          <a href="{{ '/profile.yaml' | relative_url }}">/profile.yaml</a>
+          <a href="{{ '/llms.txt' | relative_url }}">/llms.txt</a>
+          <span class="muted">+ schema.org Person in the page &lt;head&gt;</span>
+        </p>
+      </div>
+      <div class="codeblock">
+        <div class="codeblock-bar"><span></span><span></span><span></span><code>ravindra-naik.profile.yaml</code></div>
+        {% capture profile %}{% include profile.yaml %}{% endcapture %}
+        <pre><code>{{ profile | strip | escape }}</code></pre>
+      </div>
+    </section>
+  </div>
 
 </div>
+<script>
+  (function () {
+    var btns = document.querySelectorAll('[data-view-btn]');
+    function show(view) {
+      document.querySelectorAll('[data-view]').forEach(function (v) { v.hidden = v.dataset.view !== view; });
+      btns.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.viewBtn === view); });
+    }
+    btns.forEach(function (b) {
+      b.addEventListener('click', function () {
+        show(b.dataset.viewBtn);
+        history.replaceState(null, '', b.dataset.viewBtn === 'agent' ? '#agent' : location.pathname);
+        window.scrollTo(0, 0);
+      });
+    });
+    if (location.hash === '#agent') show('agent');
+  })();
+</script>
 {% include video-script.html %}

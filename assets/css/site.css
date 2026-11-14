@@ -111,6 +111,42 @@ button.chip[aria-pressed="true"] { background: var(--text); color: var(--bg); bo
   .avatar { width: 96px; height: 96px; order: -1; }
 }
 
+/* Human / Agent switch */
+.view-switch { display: flex; justify-content: flex-end; gap: 2px; margin: 24px 0 0 auto; width: max-content; padding: 3px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); }
+.view-switch button { font: 500 13px var(--sans); color: var(--muted); background: transparent; border: 0; border-radius: 999px; padding: 5px 14px; cursor: pointer; }
+.view-switch button[aria-pressed="true"] { background: var(--text); color: var(--bg); }
+.view-switch + [data-view] .hero { padding-top: 40px; }
+@media (max-width: 720px) { .view-switch + [data-view] .hero { padding-top: 24px; } }
+
+.now {
+  display: inline-flex; align-items: center; gap: 8px; margin-bottom: 18px;
+  font-size: 14px; font-weight: 500; color: var(--text); text-decoration: none;
+  padding: 5px 12px 5px 10px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface);
+}
+.now:hover { border-color: var(--accent); }
+.now .dot { width: 8px; height: 8px; border-radius: 50%; background: #16a34a; box-shadow: 0 0 0 3px color-mix(in srgb, #16a34a 22%, transparent); }
+
+/* Toolbox */
+.toolbox { margin: 0; display: grid; gap: 0; }
+.toolbox-row { display: grid; grid-template-columns: 200px 1fr; gap: 16px; padding: 14px 0; border-top: 1px solid var(--border); }
+.toolbox-row:last-child { border-bottom: 1px solid var(--border); }
+.toolbox dt { font-weight: 600; font-size: 15px; padding-top: 3px; }
+.toolbox dd { margin: 0; }
+.toolbox .chip { background: var(--surface); color: var(--text); border-color: var(--border); }
+@media (max-width: 600px) { .toolbox-row { grid-template-columns: 1fr; gap: 8px; } }
+
+/* Agent view */
+.agent-view { padding-top: 40px; }
+.agent-view h1 { font-size: clamp(1.9rem, 4vw, 2.6rem); letter-spacing: -0.025em; }
+.agent-note { margin: 24px 0; }
+.agent-note p { margin: 0; }
+.agent-links { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 10px !important; font: 14px var(--mono); }
+.codeblock { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: var(--code-bg); }
+.codeblock-bar { display: flex; align-items: center; gap: 6px; padding: 10px 14px; border-bottom: 1px solid var(--border); }
+.codeblock-bar span { width: 10px; height: 10px; border-radius: 50%; background: var(--border); }
+.codeblock-bar code { margin-left: 8px; font: 13px var(--mono); color: var(--muted); }
+.codeblock pre { margin: 0; padding: 18px; overflow-x: auto; font: 13.5px/1.65 var(--mono); }
+
 /* What I do */
 .pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .pillars h3 { font-size: 1.1rem; margin-bottom: 8px; }
