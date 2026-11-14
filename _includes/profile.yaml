@@ -6,7 +6,7 @@ summary: {{ site.description | strip | jsonify }}
 location: {{ site.author.location | jsonify }}
 employer: "Energy Exemplar"
 experience: "12+ years"
-now_building: {{ site.now.text | jsonify }}
+now: {{ site.now.text | jsonify }}
 
 links:
   site: "{{ home }}/"
@@ -35,7 +35,7 @@ career:
     summary: {{ j.summary | strip | jsonify }}
 {%- endfor %}
 
-patent: "Patent-pending: Smart Communication System for Business Owner Engagement (IN 3262/CHE/2015)"
+patent: "Patent application filed in India, 2015: Smart Communication System for Business Owner Engagement and Website Optimization (IN 3262/CHE/2015)"
 education: "Indian Institute of Technology Guwahati, 2009-2013"
 
 latest_posts:

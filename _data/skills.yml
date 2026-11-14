@@ -1,6 +1,6 @@
 # Edit freely: groups render as rows of chips on the homepage and in the agent view
 - group: Gen AI & agents
-  items: [AI agents, LLM workflows, Context engineering, Semantic Kernel, Azure AI Foundry, NLP]
+  items: [AI agents, Multi-agent systems, Agent eval harnesses, Decision intelligence, Context engineering, Sandboxed agent containers, Semantic Kernel, Azure AI Foundry, NLP]
 - group: Cloud & platform
   items: [Cloud-native architecture, Microservices, Autoscaling, Observability, Docker, Kubernetes, Azure, AWS, GCP]
 - group: Architecture & APIs

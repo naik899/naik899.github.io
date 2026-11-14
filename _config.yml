@@ -1,9 +1,9 @@
 title: Ravindra Naik
 tagline: Cloud Architect & Gen AI Developer
 description: >-
-  Cloud Architect and Gen AI Developer with 12+ years of building cloud-native
-  platforms, AI agents and developer tooling. Writing and making videos about
-  how AI actually works.
+  Cloud Architect and Gen AI Developer architecting PLEXOS® Intelligence, the
+  AI-powered energy decision platform, and building a software factory run by AI
+  agents. 12+ years of cloud-native platforms; explaining how AI works on YouTube.
 url: "https://naik899.github.io"
 baseurl: ""
 lang: en-US
@@ -27,14 +27,14 @@ youtube:
 
 # One line shown at the top of the homepage
 now:
-  text: a software factory run by AI agents
+  text: Building GenAI agents, eval harnesses & a software factory using AI agents
   url: https://www.youtube.com/shorts/r6ulQ5jfvCU
 
 defaults:
   - scope: { path: "", type: posts }
     values: { layout: post, author: Ravindra Naik }
   - scope: { path: "" }
-    values: { image: /assets/images/ravi.jpeg }
+    values: { image: /assets/images/ravindra.jpg }
 
 collections:
   posts:

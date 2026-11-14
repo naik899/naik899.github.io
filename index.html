@@ -2,8 +2,8 @@
 layout: default
 title: Ravindra Naik
 description: >-
-  Cloud Architect and Gen AI Developer. I design cloud platforms that hold up at
-  scale and build the AI agents that run on top of them.
+  Cloud Architect and Gen AI Developer architecting PLEXOS® Intelligence and
+  building a software factory where AI agents ship the code.
 ---
 {% assign longs = site.data.videos | where: "short", false %}
 {% assign shorts = site.data.videos | where: "short", true %}
@@ -19,14 +19,15 @@ description: >-
   <section class="hero" aria-labelledby="intro">
     <div>
       {% if site.now.text %}
-      <a class="now" href="{{ site.now.url }}"><span class="dot" aria-hidden="true"></span>Now building: {{ site.now.text }} <span aria-hidden="true">→</span></a>
+      <a class="now" href="{{ site.now.url }}"><span class="dot" aria-hidden="true"></span>{{ site.now.text }} <span aria-hidden="true">→</span></a>
       {% endif %}
       <p class="eyebrow">Cloud Architect &amp; Gen AI Developer</p>
       <h1 id="intro">Ravindra Naik</h1>
-      <p class="role">I design cloud platforms that hold up at scale, and build the AI agents that run on top of them.</p>
+      <p class="role headline">I build the AI agents that build the software.</p>
       <p class="bio">
-        For 12+ years I've shipped distributed systems, APIs, serverless frameworks and developer platforms.
-        Today at Energy Exemplar I architect the cloud and Gen AI layer of PLEXOS®, the energy simulation platform.
+        At Energy Exemplar I'm architecting <a href="#plexos-intelligence">PLEXOS® Intelligence</a>, an energy decision platform with AI at its core,
+        and building a software factory where crews of AI agents ship code from safe, sandboxed containers.
+        Before that: 12+ years of distributed systems, cloud platforms, and a patent filed for a virtual agent back in 2015.
         On <a href="{{ site.youtube.url }}">The Caveman Reports</a> I explain how AI actually works, in plain language.
       </p>
       <div class="hero-actions">
@@ -45,13 +46,13 @@ description: >-
         <a class="btn" href="mailto:{{ site.author.email }}">Email</a>
       </div>
     </div>
-    <img class="avatar" src="{{ '/assets/images/ravi.jpeg' | relative_url }}" alt="Ravindra Naik" width="184" height="184">
+    <img class="avatar" src="{{ '/assets/images/ravindra.jpg' | relative_url }}" alt="Ravindra Naik" width="184" height="184">
   </section>
 
   <ul class="facts" aria-label="At a glance">
     <li><strong>12+ years</strong> building software</li>
     <li><strong>IIT Guwahati</strong> alumnus</li>
-    <li><strong>Patent-pending</strong> virtual agent (2015)</li>
+    <li><strong>Patent filed</strong> for a virtual agent (2015)</li>
     <li><strong>Bengaluru</strong>, India</li>
   </ul>
 
@@ -66,7 +67,7 @@ description: >-
       <div class="card">
         <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></div>
         <h3>Gen AI development</h3>
-        <p>AI agents grounded in real data. I build agents, tools and LLM workflows that turn complex models and datasets into answers people can act on.</p>
+        <p>AI agents grounded in real data, plus the eval harnesses that keep them honest. I build agents, tools and multi-agent workflows that turn complex models into answers people can act on.</p>
       </div>
       <div class="card">
         <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l9 5-9 5-9-5z"/><path d="M3 12l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg></div>
@@ -92,11 +93,16 @@ description: >-
     <div class="section-head"><h2 id="work-h">Selected work</h2></div>
     <div class="projects">
       {% for p in site.data.projects %}
-      <article class="card project">
-        <span class="when">{{ p.when }}</span>
+      <article class="card project{% if p.featured %} featured{% endif %}"{% if p.id %} id="{{ p.id }}"{% endif %}>
+        <span class="when">{{ p.when }}{% if p.role %} · {{ p.role }}{% endif %}</span>
         <h3>{{ p.name }}</h3>
         <p>{{ p.summary }}</p>
+        {% if p.points %}
+        <ul class="points">{% for pt in p.points %}<li>{{ pt }}</li>{% endfor %}</ul>
+        {% endif %}
+        {% if p.note %}<p class="note">{{ p.note }}</p>{% endif %}
         <ul class="chips">{% for t in p.tags %}<li class="chip">{{ t }}</li>{% endfor %}</ul>
+        {% if p.link %}<a class="project-link" href="{{ p.link.url }}">{{ p.link.label }} →</a>{% endif %}
       </article>
       {% endfor %}
     </div>
@@ -158,8 +164,8 @@ description: >-
     </ol>
     <div class="also">
       <div class="card">
-        <h3>Patent-pending</h3>
-        <p>Smart Communication System for Business Owner Engagement: a virtual agent that proactively helps small businesses grow online. Indian application IN 3262/CHE/2015.</p>
+        <h3>Patent application</h3>
+        <p>Smart Communication System for Business Owner Engagement and Website Optimization: a virtual agent that proactively helps small businesses grow online. Filed in India, 2015 (IN 3262/CHE/2015).</p>
       </div>
       <div class="card">
         <h3>Education</h3>
