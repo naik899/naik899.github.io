@@ -6,7 +6,7 @@ summary: {{ site.description | strip | jsonify }}
 location: {{ site.author.location | jsonify }}
 employer: "Energy Exemplar"
 experience: "12+ years"
-now_building: {{ site.now.text | jsonify }}
+now: {{ site.now.text | jsonify }}
 
 links:
   site: "{{ home }}/"
@@ -35,7 +35,12 @@ career:
     summary: {{ j.summary | strip | jsonify }}
 {%- endfor %}
 
-patent: "Patent-pending: Smart Communication System for Business Owner Engagement (IN 3262/CHE/2015)"
+patent:
+  title: "System and Method for Optimizing and Enhancing Visibility of the Website"
+  role: "Co-inventor"
+  applicant: "NowFloats Technologies"
+  filings: ["IN 3262/CHE/2015 (2015)", "WO2017002132A1 (PCT, 2016)"]
+  url: "https://patents.google.com/patent/WO2017002132A1/en"
 education: "Indian Institute of Technology Guwahati, 2009-2013"
 
 latest_posts:

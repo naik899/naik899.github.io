@@ -7,7 +7,7 @@ sitemap: false
 
 > {{ site.description | strip }}
 
-Based in {{ site.author.location }}. Ravindra architects the cloud and Gen AI layer of PLEXOS® at Energy Exemplar, and explains how AI works on the YouTube channel {{ site.youtube.channel }}. Now building: {{ site.now.text }}.
+Based in {{ site.author.location }}. At Energy Exemplar, Ravindra is architecting PLEXOS® Intelligence (https://www.energyexemplar.com/plexos/intelligence), an AI-powered energy decision platform, and building a software factory where sandboxed AI agents ship code. He explains how AI works on the YouTube channel {{ site.youtube.channel }}. Currently: {{ site.now.text }}.
 
 ## Profile
 

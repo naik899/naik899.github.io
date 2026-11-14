@@ -1,18 +1,37 @@
-- name: EU Energy Market AI Agent
+- name: PLEXOS® Intelligence
+  id: plexos-intelligence
+  featured: true
   when: 2024 – Present
+  role: Architect
   summary: >-
-    An AI agent for European energy traders, grounded in Energy Exemplar's
-    market datasets. It answers market questions, explains trends and suggests
-    strategies in plain language.
-  tags: [AI agents, LLMs, Energy markets]
+    Energy Exemplar's AI-powered energy decision platform and the next evolution
+    of PLEXOS®, with AI built into every step rather than bolted on. Analysts
+    describe what they need in plain language; the platform prepares and
+    validates data, builds and edits models, runs real simulations on the
+    PLEXOS engine and explains what drives the results. I'm architecting it.
+  points:
+    - "Decision intelligence, not a chatbot: every answer comes from real simulations, optimized against the physical constraints of the customer's system."
+    - "Ask, build, run, approve, decide: work that took days and several handoffs happens in one working session, and recurring studies rerun on their own."
+    - "Humans stay in control: approve each step or let agents work through it, with every change versioned, checked before it runs and traceable afterward."
+    - "Enterprise-grade by design: isolated tenants in regional Azure data centers, and customer data is never used to train models."
+  note: >-
+    Launched November 2026. Early customer AEP cut integrated resource plan data
+    updates from three weeks to three days.
+  tags: [Decision intelligence, AI agents, Azure, Energy modeling]
+  link:
+    label: About PLEXOS Intelligence
+    url: https://www.energyexemplar.com/plexos/intelligence
 
-- name: AI-augmented PLEXOS®
-  when: 2024 – Present
+- name: AI software factory
+  when: 2026 – Present
   summary: >-
-    Bringing Gen AI into the PLEXOS energy simulation platform, so analysts can
-    ask questions of their models and results instead of digging through raw
-    output.
-  tags: [Gen AI, Cloud-native, SaaS]
+    A software factory where crews of AI agents build software together, each
+    agent isolated in its own container so the work stays safe and repeatable.
+    It's built to ship PLEXOS® Intelligence, and any other software.
+  tags: [Multi-agent systems, Sandboxed containers, Agentic SDLC, Eval harnesses]
+  link:
+    label: Watch the Short
+    url: https://www.youtube.com/shorts/r6ulQ5jfvCU
 
 - name: PLEXOS Cloud simulation platform
   when: 2022 – Present

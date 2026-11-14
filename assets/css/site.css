@@ -101,6 +101,7 @@ button.chip[aria-pressed="true"] { background: var(--text); color: var(--bg); bo
 .hero { padding: 80px 0 8px; display: grid; grid-template-columns: 1fr auto; gap: 48px; align-items: center; }
 .hero h1 { font-size: clamp(2.3rem, 5vw, 3.4rem); letter-spacing: -0.03em; }
 .hero .role { font-size: clamp(1.15rem, 2.4vw, 1.4rem); font-weight: 500; color: var(--muted); margin: 10px 0 0; }
+.hero .role.headline { color: var(--text); font-size: clamp(1.45rem, 3.2vw, 2rem); font-weight: 600; letter-spacing: -0.02em; line-height: 1.25; margin-top: 14px; }
 .hero .bio { font-size: 1.1rem; max-width: 600px; margin: 22px 0 0; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
 .avatar { width: 184px; height: 184px; border-radius: 50%; object-fit: cover; border: 1px solid var(--border); }
@@ -163,7 +164,16 @@ button.chip[aria-pressed="true"] { background: var(--text); color: var(--bg); bo
 .project .when { font-size: 13px; color: var(--muted); font-weight: 500; }
 .project .chips { margin-top: auto; padding-top: 6px; }
 .project .chip { background: transparent; color: var(--muted); border-color: var(--border); }
-@media (max-width: 720px) { .projects { grid-template-columns: 1fr; } }
+.project.featured { grid-column: 1 / -1; border-color: color-mix(in srgb, var(--accent) 35%, var(--border)); background: linear-gradient(180deg, var(--accent-soft), var(--surface) 55%); padding: 30px; }
+.project.featured h3 { font-size: 1.45rem; }
+.project.featured > p { color: var(--text); font-size: 16px; max-width: 760px; }
+.points { margin: 4px 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 12px 24px; }
+.points li { position: relative; padding-left: 18px; color: var(--muted); font-size: 15px; }
+.points li::before { content: ""; position: absolute; left: 0; top: .6em; width: 7px; height: 7px; border-radius: 2px; background: var(--accent); }
+.project .note { font-size: 14px; color: var(--text); border-left: 3px solid var(--accent); padding-left: 12px; }
+.project-link { font-size: 14px; font-weight: 500; text-decoration: none; }
+.project.featured .chips { margin-top: 6px; }
+@media (max-width: 720px) { .projects { grid-template-columns: 1fr; } .points { grid-template-columns: 1fr; } .project.featured { padding: 24px; } }
 
 /* Timeline */
 .timeline { list-style: none; margin: 0; padding: 0; border-left: 1px solid var(--border); }

@@ -2,9 +2,9 @@
   org: Energy Exemplar
   dates: 2024 – Present
   summary: >-
-    Architect the cloud and Gen AI layer of PLEXOS®. I design the platform and
-    build the AI agents and LLM workflows that turn PLEXOS into an AI-augmented
-    SaaS product for energy professionals.
+    Architecting PLEXOS® Intelligence, the AI-powered energy decision platform,
+    and building a software factory where sandboxed AI agents help ship it. I
+    design the platform and build the agents, tools and eval harnesses behind it.
 
 - role: Principal Software Engineer
   org: Energy Exemplar
@@ -51,8 +51,9 @@
   org: NowFloats
   dates: 2014 – 2015
   summary: >-
-    Built RIA, a patent-pending virtual agent that watched small-business
+    Built RIA, a machine-learning virtual agent that watched small-business
     websites and proactively suggested SEO and lead-conversion improvements.
+    Co-inventor on its patent filing (WO2017002132A1).
 
 - role: iPhone Developer
   org: NowFloats
