@@ -1,0 +1,62 @@
+---
+layout: default
+title: Videos
+permalink: /videos/
+description: >-
+  The Caveman Reports: short, plain-language explainers on how Gen AI actually
+  works, from how ChatGPT writes to why it gets things wrong.
+---
+{% assign longs = site.data.videos | where: "short", false %}
+{% assign shorts = site.data.videos | where: "short", true %}
+
+<div class="wrap page">
+  <header class="page-head">
+    <p class="eyebrow">YouTube</p>
+    <h1>The Caveman Reports</h1>
+    <p class="lede">{{ page.description }}</p>
+  </header>
+
+  <div class="card channel-card" style="margin-top:32px">
+    <div>
+      <h2>Follow the channel</h2>
+      <p>Explainers and Shorts on Gen AI, agents and the tools I build with.</p>
+    </div>
+    <a class="btn btn-primary" href="{{ site.youtube.url }}?sub_confirmation=1">Subscribe on YouTube</a>
+  </div>
+
+  <div class="tabs chips" role="group" aria-label="Filter videos">
+    <button class="chip" type="button" data-show="all" aria-pressed="true">All</button>
+    <button class="chip" type="button" data-show="long" aria-pressed="false">Explainers ({{ longs.size }})</button>
+    <button class="chip" type="button" data-show="shorts" aria-pressed="false">Shorts ({{ shorts.size }})</button>
+  </div>
+
+  {% if longs.size > 0 %}
+  <section data-group="long">
+    <h2 class="year">Explainers</h2>
+    <div class="videos long">
+      {% for v in longs %}{% include video.html video=v %}{% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if shorts.size > 0 %}
+  <section data-group="shorts">
+    <h2 class="year">Shorts</h2>
+    <div class="videos shorts">
+      {% for v in shorts %}{% include video.html video=v %}{% endfor %}
+    </div>
+  </section>
+  {% endif %}
+</div>
+
+<script>
+  document.querySelectorAll('[data-show]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      document.querySelectorAll('[data-show]').forEach(function (x) { x.setAttribute('aria-pressed', x === b); });
+      document.querySelectorAll('[data-group]').forEach(function (g) {
+        g.hidden = b.dataset.show !== 'all' && g.dataset.group !== b.dataset.show;
+      });
+    });
+  });
+</script>
+{% include video-script.html %}

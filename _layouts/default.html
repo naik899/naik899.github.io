@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  {% seo %}
+  {% feed_meta %}
+  <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="{{ '/' | relative_url }}">Ravindra Naik</a>
+      <nav class="nav" aria-label="Main">
+        <a href="{{ '/#work' | relative_url }}">Work</a>
+        <a href="{{ '/blog/' | relative_url }}"{% if page.url contains '/blog/' or page.url == '/categories/' %} aria-current="page"{% endif %}>Blog</a>
+        <a href="{{ '/videos/' | relative_url }}"{% if page.url == '/videos/' %} aria-current="page"{% endif %}>Videos</a>
+        <a href="{{ '/#contact' | relative_url }}">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <p>© {{ site.time | date: '%Y' }} Ravindra Naik · Bengaluru</p>
+      <p class="footer-links">
+        <a href="https://www.linkedin.com/in/naik899/" rel="me">LinkedIn</a>
+        <a href="https://github.com/naik899" rel="me">GitHub</a>
+        <a href="{{ site.youtube.url }}" rel="me">YouTube</a>
+        <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

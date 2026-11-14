@@ -6,9 +6,6 @@ categories: [AI, Microsoft, .NET, Chatbot]
 tags: [semantic-kernel, chatbot, customer-support, ai-development, csharp]
 author: Ravindra Naik
 ---
-
-# Building a Multi-Turn Customer Support Chatbot with Semantic Kernel (C#)
-
 Customer support chatbots have evolved significantly with the advent of AI technologies. Modern chatbots need to handle complex, multi-turn conversations while maintaining context and providing accurate, helpful responses. In this article, we'll explore how to build a sophisticated customer support chatbot using Microsoft's Semantic Kernel framework in C#.
 
 ## TL;DR

@@ -6,9 +6,6 @@ categories: [AI, Microsoft, .NET, Chatbot]
 tags: [semantic-kernel, chat-completion, multi-turn, agents, csharp]
 author: Ravindra Naik
 ---
-
-# Using Semantic Kernel Chat Completion Agents for Multi-Turn Conversational Bots
-
 Building engaging conversational experiences requires more than single question and answer prompts. Semantic Kernel's **chat completion agents** provide stateful interactions that make it possible to create multi-turn bots capable of juggling several conversations.
 
 ## TL;DR

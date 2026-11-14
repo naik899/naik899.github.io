@@ -1,0 +1,62 @@
+- role: Cloud Architect & Gen AI Developer
+  org: Energy Exemplar
+  dates: 2024 – Present
+  summary: >-
+    Architect the cloud and Gen AI layer of PLEXOS®. I design the platform and
+    build the AI agents and LLM workflows that turn PLEXOS into an AI-augmented
+    SaaS product for energy professionals.
+
+- role: Principal Software Engineer
+  org: Energy Exemplar
+  dates: 2022 – 2024
+  summary: >-
+    Led a team of 7 scaling the PLEXOS Cloud simulation platform. Autoscaling and
+    usage-based pricing cut simulation costs, and customers can now run thousands
+    of scenarios in parallel without losing availability.
+
+- role: Lead Engineer
+  org: Maersk
+  dates: 2020 – 2022
+  summary: >-
+    Owned reliability and performance for business-critical services. Built
+    shared libraries for cross-cutting concerns and drove CI/CD, TDD and
+    DevSecOps practices, aligning the technical roadmap with product and
+    enterprise architecture.
+
+- role: Solutions Architect
+  org: Experitest
+  dates: 2019 – 2020
+  summary: >-
+    Ran technical pre-sales and proofs of concept with enterprise clients,
+    bringing mobile and cross-browser test automation (Appium, Selenium,
+    Jenkins) into their DevOps pipelines.
+
+- role: Senior Software Engineer
+  org: Ivanti
+  dates: 2017 – 2019
+  summary: >-
+    Moved Ivanti Service Manager from legacy SOAP APIs to RESTful microservices
+    with OData querying, and refactored core libraries for stability and
+    maintainability.
+
+- role: Senior Software Engineer
+  org: NowFloats
+  dates: 2015 – 2017
+  summary: >-
+    Core engineer on Kitsune, a cloud-agnostic serverless framework. I designed
+    its UI language and compiler and built the backend engine and key
+    algorithms.
+
+- role: Software Engineer
+  org: NowFloats
+  dates: 2014 – 2015
+  summary: >-
+    Built RIA, a patent-pending virtual agent that watched small-business
+    websites and proactively suggested SEO and lead-conversion improvements.
+
+- role: iPhone Developer
+  org: NowFloats
+  dates: 2014
+  summary: >-
+    Shipped the Boost 360 iPhone app end to end: UI, in-app purchases and the
+    backend APIs behind site creation, SEO automation and analytics.

@@ -6,9 +6,6 @@ categories: [AI, Microsoft, .NET]
 tags: [semantic-kernel, ai-development, microsoft]
 author: Ravindra Naik
 ---
-
-# Semantic Kernel Updates: June-July 2025
-
 The Semantic Kernel has introduced significant updates in June and July 2025, enhancing multimodal AI development, agent orchestration, observability, and security. Key updates include a major Python SDK release, integration with GPT-Image-1, and the general availability of vector data extensions.
 
 ## TL;DR

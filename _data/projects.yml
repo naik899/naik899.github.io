@@ -1,0 +1,30 @@
+- name: EU Energy Market AI Agent
+  when: 2024 – Present
+  summary: >-
+    An AI agent for European energy traders, grounded in Energy Exemplar's
+    market datasets. It answers market questions, explains trends and suggests
+    strategies in plain language.
+  tags: [AI agents, LLMs, Energy markets]
+
+- name: AI-augmented PLEXOS®
+  when: 2024 – Present
+  summary: >-
+    Bringing Gen AI into the PLEXOS energy simulation platform, so analysts can
+    ask questions of their models and results instead of digging through raw
+    output.
+  tags: [Gen AI, Cloud-native, SaaS]
+
+- name: PLEXOS Cloud simulation platform
+  when: 2022 – Present
+  summary: >-
+    The cloud job platform behind PLEXOS simulations: thousands of concurrent
+    jobs with autoscaling, deep observability and usage-based pricing that
+    lowered the cost of every run.
+  tags: [Distributed systems, Autoscaling, Observability]
+
+- name: Kitsune serverless framework
+  when: 2015 – 2017
+  summary: >-
+    A cloud-agnostic serverless framework for launching and running web apps.
+    I designed its UI language and compiler and built core backend services.
+  tags: [Serverless, Compilers, Open source]

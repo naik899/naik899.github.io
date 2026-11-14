@@ -1,0 +1,162 @@
+---
+layout: default
+title: Ravindra Naik
+description: >-
+  Cloud Architect and Gen AI Developer. I design cloud platforms that hold up at
+  scale and build the AI agents that run on top of them.
+---
+{% assign longs = site.data.videos | where: "short", false %}
+{% assign shorts = site.data.videos | where: "short", true %}
+
+<div class="wrap">
+
+  <section class="hero" aria-labelledby="intro">
+    <div>
+      <p class="eyebrow">Cloud Architect &amp; Gen AI Developer</p>
+      <h1 id="intro">Ravindra Naik</h1>
+      <p class="role">I design cloud platforms that hold up at scale, and build the AI agents that run on top of them.</p>
+      <p class="bio">
+        For 12+ years I've shipped distributed systems, APIs, serverless frameworks and developer platforms.
+        Today at Energy Exemplar I architect the cloud and Gen AI layer of PLEXOS®, the energy simulation platform.
+        On <a href="{{ site.youtube.url }}">The Caveman Reports</a> I explain how AI actually works, in plain language.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://www.linkedin.com/in/naik899/">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          LinkedIn
+        </a>
+        <a class="btn" href="{{ site.youtube.url }}">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg>
+          YouTube
+        </a>
+        <a class="btn" href="https://github.com/naik899">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.1 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg>
+          GitHub
+        </a>
+        <a class="btn" href="mailto:{{ site.author.email }}">Email</a>
+      </div>
+    </div>
+    <img class="avatar" src="{{ '/assets/images/ravi.jpeg' | relative_url }}" alt="Ravindra Naik" width="184" height="184">
+  </section>
+
+  <ul class="facts" aria-label="At a glance">
+    <li><strong>12+ years</strong> building software</li>
+    <li><strong>IIT Guwahati</strong> alumnus</li>
+    <li><strong>Patent-pending</strong> virtual agent (2015)</li>
+    <li><strong>Bengaluru</strong>, India</li>
+  </ul>
+
+  <section class="section" aria-labelledby="what">
+    <div class="section-head"><h2 id="what">What I do</h2></div>
+    <div class="pillars">
+      <div class="card">
+        <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H7a5 5 0 1 1 1.1-9.9A6 6 0 0 1 19.6 11 4 4 0 0 1 17.5 19z"/></svg></div>
+        <h3>Cloud architecture</h3>
+        <p>Cloud-native platforms designed for scale, cost and reliability. I took PLEXOS simulations to thousands of parallel jobs with autoscaling and usage-based pricing.</p>
+      </div>
+      <div class="card">
+        <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></div>
+        <h3>Gen AI development</h3>
+        <p>AI agents grounded in real data. I build agents, tools and LLM workflows that turn complex models and datasets into answers people can act on.</p>
+      </div>
+      <div class="card">
+        <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l9 5-9 5-9-5z"/><path d="M3 12l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg></div>
+        <h3>Platform modernization</h3>
+        <p>Legacy systems turned into clean services: SOAP to REST and OData microservices, shared libraries, and CI/CD that makes teams faster.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="work" aria-labelledby="work-h">
+    <div class="section-head"><h2 id="work-h">Selected work</h2></div>
+    <div class="projects">
+      {% for p in site.data.projects %}
+      <article class="card project">
+        <span class="when">{{ p.when }}</span>
+        <h3>{{ p.name }}</h3>
+        <p>{{ p.summary }}</p>
+        <ul class="chips">{% for t in p.tags %}<li class="chip">{{ t }}</li>{% endfor %}</ul>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  {% if site.data.videos.size > 0 %}
+  <section class="section" aria-labelledby="videos-h">
+    <div class="section-head">
+      <h2 id="videos-h">Latest from The Caveman Reports</h2>
+      <a href="{{ '/videos/' | relative_url }}">All videos →</a>
+    </div>
+    <div class="home-videos">
+      {% if longs.size > 0 %}
+      {% assign featured = longs | first %}
+      <div class="videos long">{% include video.html video=featured %}</div>
+      {% endif %}
+      <div class="videos shorts">
+        {% for v in shorts limit: 3 %}{% include video.html video=v %}{% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="section" aria-labelledby="writing-h">
+    <div class="section-head">
+      <h2 id="writing-h">Writing</h2>
+      <a href="{{ '/blog/' | relative_url }}">All posts →</a>
+    </div>
+    <ul class="post-list">
+      {% for post in site.posts limit: 3 %}
+      <li>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %-d, %Y' }}</time>
+          <div>
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.excerpt | strip_html | truncatewords: 26 }}</p>
+          </div>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="section" id="experience" aria-labelledby="exp-h">
+    <div class="section-head">
+      <h2 id="exp-h">Experience</h2>
+      <a href="https://www.linkedin.com/in/naik899/">Full profile →</a>
+    </div>
+    <ol class="timeline">
+      {% for job in site.data.experience %}
+      <li>
+        <div class="row">
+          <h3>{{ job.role }} <span class="org">· {{ job.org }}</span></h3>
+          <span class="dates">{{ job.dates }}</span>
+        </div>
+        <p>{{ job.summary }}</p>
+      </li>
+      {% endfor %}
+    </ol>
+    <div class="also">
+      <div class="card">
+        <h3>Patent-pending</h3>
+        <p>Smart Communication System for Business Owner Engagement: a virtual agent that proactively helps small businesses grow online. Indian application IN 3262/CHE/2015.</p>
+      </div>
+      <div class="card">
+        <h3>Education</h3>
+        <p>Indian Institute of Technology Guwahati, 2009 – 2013.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact" aria-labelledby="contact-h">
+    <div class="card contact">
+      <h2 id="contact-h">Let's talk</h2>
+      <p class="muted">I'm happy to talk about cloud architecture, Gen AI agents and platform engineering, or to swap notes on what's actually working in production.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+        <a class="btn" href="https://www.linkedin.com/in/naik899/">Message on LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+{% include video-script.html %}

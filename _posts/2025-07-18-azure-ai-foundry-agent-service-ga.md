@@ -6,9 +6,6 @@ categories: [Azure, AI, Cloud Computing, Microsoft]
 tags: [azure-ai, ai-agents, cloud-computing, microsoft, artificial-intelligence, enterprise-ai, multi-agent-workflows]
 author: Ravindra Naik
 ---
-
-# [Launched] Generally Available: Azure AI Foundry Agent Service
-
 Microsoft has officially launched the Azure AI Foundry Agent Service as a generally available product, marking a significant milestone in enterprise AI capabilities. This powerful platform empowers developers to create, deploy, and scale sophisticated AI agents capable of handling complex tasks and workflows.
 
 ## TL;DR

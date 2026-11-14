@@ -1,0 +1,16 @@
+<script>
+  // Swap a thumbnail for the real player only when clicked
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('.player[data-id]');
+    if (!btn) return;
+    var f = document.createElement('iframe');
+    f.src = 'https://www.youtube-nocookie.com/embed/' + btn.dataset.id + '?autoplay=1&rel=0';
+    f.title = btn.getAttribute('aria-label');
+    f.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen';
+    f.allowFullscreen = true;
+    var box = document.createElement('div');
+    box.className = 'player';
+    box.appendChild(f);
+    btn.replaceWith(box);
+  });
+</script>

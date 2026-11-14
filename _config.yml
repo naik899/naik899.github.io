@@ -1,67 +1,55 @@
-# GitHub Pages configuration
-
-# Use the DevPortfolio theme by Ryan Fitzgerald
-remote_theme: RyanFitzgerald/devportfolio
-
-# Include custom CSS
-sass:
-  load_paths:
-    - _sass
-    - assets/css
-
-# Site settings
-lang: en-US
-title: Ravindra Naik - Cloud Architect & GenAI Evangelist
-description: Cloud Architect and GenAI Evangelist with 12+ years of expertise in scalable systems, AI automation, and energy intelligence platforms
+title: Ravindra Naik
+tagline: Cloud Architect & Gen AI Developer
+description: >-
+  Cloud Architect and Gen AI Developer with 12+ years of building cloud-native
+  platforms, AI agents and developer tooling. Writing and making videos about
+  how AI actually works.
 url: "https://naik899.github.io"
 baseurl: ""
+lang: en-US
+timezone: Asia/Kolkata
 
-# SEO settings
-google_analytics: # Add your GA tracking ID here if needed
-google_analytics_anonymize_ip: true
-
-# Author information
 author:
   name: Ravindra Naik
   email: naik899@gmail.com
-  location: Bengaluru, Karnataka, India
-  bio: Cloud Architect & GenAI Evangelist | Energy Intelligence Platform
-  avatar: assets/images/ravi.jpeg
-  social:
-    linkedin: naik899
-    github: naik899
-    twitter: naik899
+  location: Bengaluru, India
 
-# Navigation
-navigation:
-  - title: Home
-    url: /
-  - title: About
-    url: /#about
-  - title: Experience
-    url: /#experience
-  - title: Projects
-    url: /#projects
-  - title: Blog
-    url: /blog/
-  - title: Categories
-    url: /categories/
-  - title: Contact
-    url: /#contact
+social:
+  name: Ravindra Naik
+  links:
+    - https://www.linkedin.com/in/naik899/
+    - https://github.com/naik899
+    - https://www.youtube.com/@thecavemanreports
 
-# Blog settings
+youtube:
+  channel: The Caveman Reports
+  url: https://www.youtube.com/@thecavemanreports
+
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post, author: Ravindra Naik }
+  - scope: { path: "" }
+    values: { image: /assets/images/ravi.jpeg }
+
 collections:
   posts:
     output: true
     permalink: /blog/:title/
 
-# Plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# Build settings
 markdown: kramdown
 highlighter: rouge
+kramdown:
+  input: GFM
 
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - scripts
+  - .github
