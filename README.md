@@ -35,4 +35,10 @@ docker run --rm -it -p 4000:4000 -v "$PWD":/site -w /site ruby:3.3 \
   sh -c "bundle config set --local path vendor/bundle && bundle install && bundle exec jekyll serve --host 0.0.0.0"
 ```
 
-Then open http://localhost:4000. To refresh the video list by hand, run `python3 scripts/sync_youtube.py`.
+Then open http://localhost:4000.
+
+Videos refresh daily. To refresh now, run the **Build and deploy site** workflow from the Actions tab, or locally:
+
+```bash
+docker run --rm -v "$PWD":/site -w /site python:3.12-slim python -I scripts/sync_youtube.py
+```
