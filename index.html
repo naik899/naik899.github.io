@@ -7,6 +7,8 @@ description: >-
 ---
 {% assign longs = site.data.videos | where: "short", false %}
 {% assign shorts = site.data.videos | where: "short", true %}
+{% assign featured_projects = site.data.projects | where: "featured", true %}
+{% assign other_projects = site.data.projects | where_exp: "p", "p.featured != true" %}
 
 <div class="wrap">
 
@@ -16,17 +18,19 @@ description: >-
   </div>
 
   <div data-view="human">
-  <section class="hero" aria-labelledby="intro">
-    <div>
+  <section class="sheet hero" aria-labelledby="intro">
+    <div class="hero-copy">
       {% if site.now.text %}
       <a class="now" href="{{ site.now.url }}"><span class="dot" aria-hidden="true"></span>{{ site.now.text }} <span aria-hidden="true">→</span></a>
       {% endif %}
-      <p class="eyebrow">Cloud Architect &amp; Gen AI Developer</p>
-      <h1 id="intro">Ravindra Naik</h1>
-      <p class="role headline">I build the AI agents that build the software.</p>
+      <p class="eyebrow">Ravindra Naik · Cloud Architect &amp; Gen AI Developer</p>
+      <h1 id="intro">I build the <span class="mark">AI agents</span> that build the <span class="mark">software.</span></h1>
+      <ul class="callouts">
+        <li><b aria-hidden="true">A</b><span>Agents: crews working inside sandboxed containers, kept honest by eval harnesses.</span></li>
+        <li><b aria-hidden="true">B</b><span>Software: <a href="#plexos-intelligence" style="color:inherit">PLEXOS® Intelligence</a> at Energy Exemplar, and anything else.</span></li>
+      </ul>
       <p class="bio">
-        At Energy Exemplar I'm architecting <a href="#plexos-intelligence">PLEXOS® Intelligence</a>, an energy decision platform with AI at its core,
-        and building a software factory where crews of AI agents ship code from safe, sandboxed containers.
+        At Energy Exemplar I'm architecting <a href="#plexos-intelligence">PLEXOS® Intelligence</a>, an energy decision platform with AI at its core.
         Before that: 12+ years of distributed systems, cloud platforms, and a machine-learning website agent I co-invented (patent filed in 2015).
         On <a href="{{ site.youtube.url }}">The Caveman Reports</a> I explain how AI actually works, in plain language.
       </p>
@@ -46,30 +50,63 @@ description: >-
         <a class="btn" href="mailto:{{ site.author.email }}">Email</a>
       </div>
     </div>
-    <img class="avatar" src="{{ '/assets/images/ravindra.jpg' | relative_url }}" alt="Ravindra Naik" width="184" height="184">
+    <figure class="detail">
+      <div class="ring">
+        <img class="avatar" src="{{ '/assets/images/ravindra.jpg' | relative_url }}" alt="Ravindra Naik" width="232" height="232">
+        <span class="tick t" aria-hidden="true"></span><span class="tick b" aria-hidden="true"></span>
+        <span class="tick l" aria-hidden="true"></span><span class="tick r" aria-hidden="true"></span>
+      </div>
+      <figcaption>DETAIL 1 · THE ARCHITECT</figcaption>
+    </figure>
   </section>
 
-  <ul class="facts" aria-label="At a glance">
-    <li><strong>12+ years</strong> building software</li>
-    <li><strong>IIT Guwahati</strong> alumnus</li>
-    <li><strong>Patent co-inventor</strong>, ML website agent (2015)</li>
-    <li><strong>Bengaluru</strong>, India</li>
-  </ul>
+  <div class="sheet">
+    <ul class="facts" aria-label="At a glance">
+      <li><span>Service life</span><strong>12+ years</strong></li>
+      <li><span>Origin</span><strong>IIT Guwahati</strong></li>
+      <li><span>Patent filing</span><strong>Co-inventor, 2015</strong></li>
+      <li><span>Site</span><strong>Bengaluru, India</strong></li>
+    </ul>
+  </div>
 
-  <section class="section" aria-labelledby="what">
-    <div class="section-head"><h2 id="what">What I do</h2></div>
+  <section class="section" id="floor" aria-labelledby="floor-h">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Section A–A</p>
+        <h2 id="floor-h">The factory floor</h2>
+      </div>
+      <a href="{{ site.now.url }}">Watch it run →</a>
+    </div>
+    <ol class="floor">
+      <li class="station"><div class="box"><span class="num">STN 01</span><h3>Spec in</h3><p>A goal, a backlog item or a bug report enters the line.</p></div><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span></li>
+      <li class="station"><div class="box"><span class="num">STN 02</span><h3>Plan</h3><p>An architect agent breaks the work down.</p></div><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span></li>
+      <li class="station"><div class="box"><span class="num">STN 03</span><h3>Build</h3><p>Builder agents write the code, each in its own container.</p></div><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span></li>
+      <li class="station"><div class="box"><span class="num">STN 04</span><h3>Review</h3><p>A reviewer agent reads every change.</p></div><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span></li>
+      <li class="station"><div class="box gate"><span class="num">STN 05</span><h3>Eval gate</h3><p>Eval harnesses test the behaviour before anything moves on.</p></div><span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></span></li>
+      <li class="station"><div class="box"><span class="num">STN 06</span><h3>Ship</h3><p>PLEXOS® Intelligence, and any other software.</p></div></li>
+    </ol>
+    <p class="drawing-note"><b>NOTE 1.</b>Each agent works in its own sandboxed container, so the work stays safe and repeatable.</p>
+  </section>
+
+  <section class="section" id="what" aria-labelledby="what-h">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Section B–B</p>
+        <h2 id="what-h">What I do</h2>
+      </div>
+    </div>
     <div class="pillars">
-      <div class="card">
+      <div class="cell">
         <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H7a5 5 0 1 1 1.1-9.9A6 6 0 0 1 19.6 11 4 4 0 0 1 17.5 19z"/></svg></div>
         <h3>Cloud architecture</h3>
         <p>Cloud-native platforms designed for scale, cost and reliability. I took PLEXOS simulations to thousands of parallel jobs with autoscaling and usage-based pricing.</p>
       </div>
-      <div class="card">
+      <div class="cell">
         <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></div>
         <h3>Gen AI development</h3>
         <p>AI agents grounded in real data, plus the eval harnesses that keep them honest. I build agents, tools and multi-agent workflows that turn complex models into answers people can act on.</p>
       </div>
-      <div class="card">
+      <div class="cell">
         <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l9 5-9 5-9-5z"/><path d="M3 12l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg></div>
         <h3>Platform modernization</h3>
         <p>Legacy systems turned into clean services: SOAP to REST and OData microservices, shared libraries, and CI/CD that makes teams faster.</p>
@@ -77,8 +114,53 @@ description: >-
     </div>
   </section>
 
+  <section class="section" id="work" aria-labelledby="work-h">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Section C–C</p>
+        <h2 id="work-h">Off the line</h2>
+      </div>
+    </div>
+    {% for p in featured_projects %}
+    <article class="featured-part"{% if p.id %} id="{{ p.id }}"{% endif %}>
+      <div class="main">
+        <span class="label">Part 001 · Flagship · {{ p.when }}{% if p.role %} · {{ p.role }}{% endif %}</span>
+        <h3>{{ p.name }}</h3>
+        <p>{{ p.summary }}</p>
+        <ul class="chips">{% for t in p.tags %}<li class="chip">{{ t }}</li>{% endfor %}</ul>
+        {% if p.link %}<a class="part-link" href="{{ p.link.url }}">{{ p.link.label }} →</a>{% endif %}
+      </div>
+      {% if p.points or p.note %}
+      <div class="side">
+        {% if p.points %}<ol class="spec">{% for pt in p.points %}<li>{{ pt }}</li>{% endfor %}</ol>{% endif %}
+        {% if p.note %}<div class="result"><span class="label">Field result</span><p>{{ p.note }}</p></div>{% endif %}
+      </div>
+      {% endif %}
+    </article>
+    {% endfor %}
+    <div class="parts">
+      <div class="parts-head label" aria-hidden="true"><span>Part</span><span>Name</span><span>Years</span><span>Description</span></div>
+      <ul>
+        {% for p in other_projects %}
+        {% assign n = forloop.index | plus: 1 %}
+        <li class="part"{% if p.id %} id="{{ p.id }}"{% endif %}>
+          <span class="no">00{{ n }}</span>
+          <h3>{{ p.name }}</h3>
+          <span class="yrs">{{ p.when }}</span>
+          <p>{{ p.summary }}{% if p.link %} <a href="{{ p.link.url }}">{{ p.link.label }} →</a>{% endif %}</p>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+
   <section class="section" id="toolbox" aria-labelledby="toolbox-h">
-    <div class="section-head"><h2 id="toolbox-h">Toolbox</h2></div>
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Section D–D</p>
+        <h2 id="toolbox-h">Bill of materials</h2>
+      </div>
+    </div>
     <dl class="toolbox">
       {% for s in site.data.skills %}
       <div class="toolbox-row">
@@ -89,29 +171,13 @@ description: >-
     </dl>
   </section>
 
-  <section class="section" id="work" aria-labelledby="work-h">
-    <div class="section-head"><h2 id="work-h">Selected work</h2></div>
-    <div class="projects">
-      {% for p in site.data.projects %}
-      <article class="card project{% if p.featured %} featured{% endif %}"{% if p.id %} id="{{ p.id }}"{% endif %}>
-        <span class="when">{{ p.when }}{% if p.role %} · {{ p.role }}{% endif %}</span>
-        <h3>{{ p.name }}</h3>
-        <p>{{ p.summary }}</p>
-        {% if p.points %}
-        <ul class="points">{% for pt in p.points %}<li>{{ pt }}</li>{% endfor %}</ul>
-        {% endif %}
-        {% if p.note %}<p class="note">{{ p.note }}</p>{% endif %}
-        <ul class="chips">{% for t in p.tags %}<li class="chip">{{ t }}</li>{% endfor %}</ul>
-        {% if p.link %}<a class="project-link" href="{{ p.link.url }}">{{ p.link.label }} →</a>{% endif %}
-      </article>
-      {% endfor %}
-    </div>
-  </section>
-
   {% if site.data.videos.size > 0 %}
-  <section class="section" aria-labelledby="videos-h">
+  <section class="section" id="videos" aria-labelledby="videos-h">
     <div class="section-head">
-      <h2 id="videos-h">Latest from The Caveman Reports</h2>
+      <div>
+        <p class="eyebrow">Field notes</p>
+        <h2 id="videos-h">The Caveman Reports</h2>
+      </div>
       <a href="{{ '/videos/' | relative_url }}">All videos →</a>
     </div>
     <div class="home-videos">
@@ -126,9 +192,12 @@ description: >-
   </section>
   {% endif %}
 
-  <section class="section" aria-labelledby="writing-h">
+  <section class="section" id="writing" aria-labelledby="writing-h">
     <div class="section-head">
-      <h2 id="writing-h">Writing</h2>
+      <div>
+        <p class="eyebrow">Logbook</p>
+        <h2 id="writing-h">Writing</h2>
+      </div>
       <a href="{{ '/blog/' | relative_url }}">All posts →</a>
     </div>
     <ul class="post-list">
@@ -148,26 +217,32 @@ description: >-
 
   <section class="section" id="experience" aria-labelledby="exp-h">
     <div class="section-head">
-      <h2 id="exp-h">Experience</h2>
+      <div>
+        <p class="eyebrow">Revision history</p>
+        <h2 id="exp-h">Experience</h2>
+      </div>
       <a href="https://www.linkedin.com/in/naik899/">Full profile →</a>
     </div>
-    <ol class="timeline">
+    {% assign letters = "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P" | split: "," %}
+    {% assign total = site.data.experience.size %}
+    <div class="revs-head label" aria-hidden="true"><span>Rev</span><span>Date</span><span>Role</span><span>Change</span></div>
+    <ol class="revs">
       {% for job in site.data.experience %}
-      <li>
-        <div class="row">
-          <h3>{{ job.role }} <span class="org">· {{ job.org }}</span></h3>
-          <span class="dates">{{ job.dates }}</span>
-        </div>
+      {% assign li = total | minus: forloop.index %}
+      <li class="rev">
+        <span class="letter">{{ letters[li] }}</span>
+        <span class="dates">{{ job.dates }}</span>
+        <h3>{{ job.role }}<span class="org">{{ job.org }}</span></h3>
         <p>{{ job.summary }}</p>
       </li>
       {% endfor %}
     </ol>
     <div class="also">
-      <div class="card">
+      <div>
         <h3>Patent filing · co-inventor</h3>
         <p>System and Method for Optimizing and Enhancing Visibility of the Website: a machine-learning agent that analyzes small-business websites against search-ranking signals and proactively prompts owners with the actions that improve discovery. Filed by NowFloats in India in 2015 (IN 3262/CHE/2015) and internationally as <a href="https://patents.google.com/patent/WO2017002132A1/en">WO2017002132A1</a>.</p>
       </div>
-      <div class="card">
+      <div>
         <h3>Education</h3>
         <p>Indian Institute of Technology Guwahati, 2009 – 2013.</p>
       </div>
@@ -175,9 +250,12 @@ description: >-
   </section>
 
   <section class="section" id="contact" aria-labelledby="contact-h">
-    <div class="card contact">
-      <h2 id="contact-h">Let's talk</h2>
-      <p class="muted">I'm happy to talk about cloud architecture, Gen AI agents and platform engineering, or to swap notes on what's actually working in production.</p>
+    <div class="sheet contact">
+      <div>
+        <p class="eyebrow">Work order</p>
+        <h2 id="contact-h">Have something that should be built by agents?</h2>
+        <p>I'm happy to talk about cloud architecture, Gen AI agents and platform engineering, or to swap notes on what's actually working in production.</p>
+      </div>
       <div class="hero-actions">
         <a class="btn btn-primary" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
         <a class="btn" href="https://www.linkedin.com/in/naik899/">Message on LinkedIn</a>
